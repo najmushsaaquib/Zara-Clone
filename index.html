@@ -17,71 +17,181 @@
       rel="stylesheet"
     />
 
-    <link rel="icon" href="/Logos/zara-main-logo.svg" type="image/icon type">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="shortcut icon" href="/Logos/zara-new.png" type="image/x-icon" />
 
     <link rel="stylesheet" href="/Styles/index.css" />
-    <title>ZARA INDIA</title>
+    <title>Zara India</title>
   </head>
   <body>
-    <!-- Nav bar starts here -->
-    <nav>
-      <div id="navbar__main">
-        <!-- left part of the nav -->
-        <div id="navbar__left">
-          <img src="/Logos/menu.png" alt="hamburger menu" id="hamburger" />
-          <img
-            src="/Logos/zara-title.png"
-            alt="zara logo is here"
-            id="main-logo"
-          />
+    <!-- ! Main Nav Bar starts form here -->
+    <div id="navbar">
+      <!-- ! Left side of the nav bar -->
+      <div id="navbar__left">
+        <div id="hamdiv">
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              >&times;</a
+            >
+            <a href="/Pages/viewAll.html" class="sideNavHeading">View All</a>
+            <a href="/Pages/women.html" class="sideNavHeading">Women</a>
+
+            <a href="">
+              <ul>
+                <li>Top</li>
+                <li>Jeans</li>
+                <li>Skirt</li>
+                <li>Bags</li>
+                <li>Shoes</li>
+              </ul>
+            </a>
+
+            <a href="/Pages/men.html" class="sideNavHeading">Man</a>
+
+            <a href="">
+              <ul>
+                <li>Shirt</li>
+                <li>Blazer</li>
+                <li>Pant</li>
+                <li>Shoes</li>
+                <li>Perfumes</li>
+              </ul>
+            </a>
+
+            <a href="/Pages/kids.html" class="sideNavHeading">Kids</a>
+
+            <a href="">
+              <ul>
+                <li>Top</li>
+                <li>Jeans</li>
+                <li>Trousers</li>
+                <li>Shoes</li>
+              </ul>
+            </a>
+          </div>
+          <span
+            class="ham"
+            style="font-size: 20px; cursor: pointer"
+            onclick="openNav()"
+            >&#9776;</span
+          >
         </div>
 
-        <!-- right part of the nav -->
-        <div id="navbar__right">
-          <div id="search-box" class="nav-right-pad">
-            <span>SEARCH</span>
-          </div>
-          <div id="login" class="nav-right-pad">LOGIN</div>
-          <div id="help" class="nav-right-pad">HELP</div>
-          <div id="cart" class="nav-right-pad">CART</div>
+        <div id="logodiv">
+          <img src="/Logos/zara-logo.png" alt="zara-logo" id="logoimg" />
         </div>
       </div>
-    </nav>
-    <!-- Nav bar ends here -->
 
-    <div id="first">
-      <img
-        src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-new/subhome-xmedia-08//w/771/IMAGE-large-landscape-59c32571-389d-4fb2-ab43-2af31224787e-default_0.jpg?ts=1645447500949"
-        alt=""
-      />
+      <!--   Right side of the nav bar -->
+
+      <div id="navbar__right">
+        <div id="login_div">
+          <pre>  <a href="/Pages/login.html">Login</a> </pre>
+        </div>
+        <div id="help_div">
+          <pre>  <a href="/index.html">Help</a> </pre>
+        </div>
+        <div id="cart_div">
+          <a href="/Pages/cart.html">
+            <img src="/Logos/cart.svg" alt="cart logo" id="cart_logo" />
+          </a>
+        </div>
+      </div>
     </div>
 
+    <!--  ! End of the nav bar -->
+
+    <!-- ! First div of the page starts here -->
+
+    <div id="first">
+      <div class="container">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-new/subhome-xmedia-08//w/771/IMAGE-large-landscape-59c32571-389d-4fb2-ab43-2af31224787e-default_0.jpg?ts=1645447500949"
+                alt=""
+                class="womenimg"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-man-new/subhome-xmedia-08//w/771/IMAGE-large-landscape-d02522fe-4f18-4e0f-91fd-4f347570b7fa-default_0.jpg?ts=1645519610839"
+                alt=""
+                class="menimg"
+              />
+            </div>
+            <div class="swiper-slide">
+              <video src="/Videos/Kids.mp4" autoplay loop muted></video>
+            </div>
+            ...
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ! Second div of the page starts here -->
     <div id="second">
       <img
         src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-dresses/subhome-xmedia-07//w/771/IMAGE-large-landscape-4e161707-abe9-447b-8c35-d17430954be1-default_0.jpg?ts=1645188000472"
         alt=""
+        class="womenimg"
       />
-    </div>
-    <div id="third">
-      <!-- <img src="" alt="" /> -->
 
+      <ol>
+        <li>New</li>
+        <li>Dresses</li>
+        <li>Shoes</li>
+        <li>Lifestyle</li>
+      </ol>
+    </div>
+
+    <!-- ! Third div of the page starts here -->
+
+    <div id="third">
       <video src="/Videos/third.mp4" autoplay loop muted></video>
     </div>
+
+    <!-- ! Fourth div of the page starts here -->
+
     <div id="fourth">
       <video src="/Videos/fourth.mp4" autoplay loop muted></video>
     </div>
 
-    <!-- footer starts from here -->
+    <!-- ! Footer starts from here -->
     <footer>
-      <h4>Join Our Newsletter</h4>
+      <h4>
+        <a href="https://www.zara.com/in/en/z-newsletter-nl1400.html?v1=11110"
+          >Join Our Newsletter
+        </a>
+      </h4>
 
       <div id="social-media">
         <ul>
-          <li>Instagram</li>
-          <li>Facebook</li>
-          <li>Twitter</li>
-          <li>Pinterest</li>
-          <li>Youtube</li>
+          <li>
+            <a href="https://www.instagram.com/zara/" target="_blank"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a href="https://www.facebook.com/Zara" target="_blank">Facebook</a>
+          </li>
+          <li>
+            <a href="https://twitter.com/ZARA" target="_blank">Twitter</a>
+          </li>
+          <li>
+            <a href="https://www.pinterest.es/zaraofficial/" target="_blank"
+              >Pinterest</a
+            >
+          </li>
+          <li>
+            <a href="https://www.youtube.com/user/zara" target="_blank"
+              >YouTube</a
+            >
+          </li>
         </ul>
       </div>
 
@@ -95,4 +205,7 @@
       </div>
     </footer>
   </body>
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="/Script/index.js"></script>
 </html>
