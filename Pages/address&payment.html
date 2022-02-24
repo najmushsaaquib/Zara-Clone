@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Styles/address&payment.css" />
+    <title>Address & Payment Page</title>
+  </head>
+  <body>
+
+    <div id="bucket">
+    <nav>
+      <div id="navbar__main">
+        <!-- left part of the nav -->
+        <div id="navbar__left">
+          <img src="/Logos/menu.png" alt="hamburger menu" id="hamburger" />
+          <img
+            src="/Logos/zara-title.png"
+            alt="zara logo is here"
+            id="main-logo"
+          />
+        </div>
+
+        <!-- right part of the nav -->
+        <div id="navbar__right">
+          <div id="search-box" class="nav-right-pad">
+            <span>SEARCH</span>
+          </div>
+          <div id="login" class="nav-right-pad">LOGIN</div>
+          <div id="help" class="nav-right-pad">HELP</div>
+          <div id="cart" class="nav-right-pad">CART</div>
+        </div>
+      </div>
+    </nav>
+    <div id="container">
+
+     <div id="heading"><h3>CHOOSE YOUR SHIPPING ADDRESS</h3></div>
+     
+     <div id="DeliveryAddress">
+     <textarea placeholder="Fill only if the delivery is not to your home address"></textarea>
+     </div>
+
+     <div><h3>HOME DELIVERY</h3></div>
+     <div id="HomeDelivery">
+       <div>
+        <label id="Ist"><input value="one1" id="chose" name="option" type="radio"></label>
+      </div>
+      <div>
+        <h2 id="date">DELIVERY WITH IN 3 WORKING DAYS</h2>
+        <p>FREE SHIPPING FOR ORDERS OVER ₹ 2,990</p>
+       </div>
+      </div>
+
+
+     
+
+     <div id="sldiv">
+       <div><p>INDIA</p></div>
+       <div><p>ENGLISH</p>
+      <p>© ALL RIGHTS RESERVED</p></div>
+     </div>
+
+
+     <div id="ldiv"><p>NAME AND ADDRESS OF THE MANUFACTURER:
+      INDUSTRIA DE DISEÑO TEXTIL, S.A. (INDITEX, S.A.)
+      AVENIDA DE LA DIPUTACIÓN, EDIFICIO INDITEX, 15143, ARTEIXO (A CORUÑA), SPAIN</p></div>
+
+     
+
+
+
+
+     <div id="btab">
+      <div>
+        <h3>HELP</h3>
+<a href=""><p>SHOP AT ZARA.COM</p></a> 
+<a href=""><p>PRODUCT</p> </a>
+<a href=""><p>PAYMENT</p> </a>
+<a href=""><p>SHIPPING</p> </a>
+<a href=""> <p>EXCHANGES AND RETURNS</p></a>
+<a href=""><p>SHOPS AND COMPANY</p> </a>
+<a href=""><p>CLOTHES COLLECTION PROGRAMME</p> </a>
+<a href=""><p>MY ACCOUNT</p> </a>
+      </div>
+      <div>
+       <h3>FOLLOW US</h3> 
+        <a href=""><p>NEWSLETTER</p> </a>
+        <a href=""> <p>INSTAGRAM</p></a>
+        <a href=""><p>FACEBOOK</p> </a>
+        <a href=""> <p>TWITTER</p></a>
+       <a href="">  <p>PINTEREST</p></a>
+        <a href=""><p>YOUTUBE</p> </a>
+      </div>
+      <div>
+        <h3>COMPANY</h3>
+        <a href=""> <p>ABOUT US</p></a>
+        <a href=""><p>OFFICES</p> </a>
+        <a href=""><p>STORES</p> </a>
+        <a href=""><p>WORK WITH US</p> </a>
+      </div>
+      <div>
+        <h3>POLICIES</h3>
+        <a href=""><p>PRIVACY POLICY</p> </a>
+        <a href=""> <p>PURCHASE CONDITIONS</p></a>
+        <a href=""><p>COOKIES SETTINGS</p></a>
+      </div>
+   </div>
+  </div>
+</div>
+   <button class="open-button" onclick="openForm()">Chat</button>
+   <button class="open-button2" onclick="continueForm()">Continue</button>
+   <div id="total"><p>Total</p></div>
+
+   <div class="chat-popup" id="myForm">
+     <form action="/action_page.php" class="form-container">
+      
+       <h1>Chat</h1>
+       
+   
+       <label for="msg"><b>Message</b></label>
+       <textarea placeholder="Zara here, how can I help you...?" name="msg" required></textarea>
+   
+       <button type="submit" class="btn">Send</button>
+       <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+     </form>
+   </div>
+     
+
+
+
+     
+  </body>
+  <script src="/Script/address&payment.js"></script>
+</html>

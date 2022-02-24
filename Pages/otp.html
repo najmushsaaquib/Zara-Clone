@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Styles/otp.css">
+    <title>Final OTP Page</title>
+    <style>
+         #otpdiv{
+             width:40px;
+    display:flex;
+   }
+   #otpdiv>div input{
+        width:20px   
+   }
+   .open-button2 {
+    background-color: #555;
+    color: white;
+    padding:16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    left: 630px;
+    width: 150px;
+    
+  }
+  .form-container .btn:hover, .open-button2:hover {
+    opacity: 1;
+  }
+    </style>
+   
+</head>
+<body>
+    <div id="otpdiv">
+        <div><input id="n1" type="text"></div>
+        <div><input id="n2" type="text"></div>
+        <div><input id="n3" type="text"></div>
+        <div><input id="n4" type="text"></div>
+    </div>
+    <button class="open-button2" onclick="continueForm()">Continue</button>
+</body>
+
+<script src="/Script/otp.js" ></script>
+</html>
