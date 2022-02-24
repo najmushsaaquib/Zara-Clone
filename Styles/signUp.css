@@ -203,6 +203,7 @@
     z-index: 100;
     top: 0;
     overflow: hidden;
+    background-color: white;
     border: 1px solid transparent;
   }
   
@@ -262,7 +263,7 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: /* transparent; */ rgba(255, 37, 37, 0.001);
+    background-color: /* transparent; */ rgba(0, 0, 0, 0.1);
     overflow-x: hidden;
     padding-top: 130px;
   }
