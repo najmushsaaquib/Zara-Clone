@@ -25,7 +25,7 @@ let obj = {
   password: "password",
 };
 
-// loginData.push(obj)
+loginData.push(obj)
 // console.log(loginData[0].name)
 
 localStorage.setItem("loginData", JSON.stringify(loginData));
