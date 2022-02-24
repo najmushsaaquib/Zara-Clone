@@ -1,0 +1,14 @@
+
+
+#container{
+  
+    margin-right:30px;
+    width:900px;
+    display:flex;
+    justify-content:space-evenly;
+}
+#box{
+    padding-top:100px;
+  
+    width:380px;
+}

@@ -10,30 +10,7 @@
    
 </head>
 <body>
-
-    <nav>
-        <div id="navbar__main">
-          <!-- left part of the nav -->
-          <div id="navbar__left">
-            <img src="/Logos/menu.png" alt="hamburger menu" id="hamburger" />
-            <img
-              src="/Logos/zara-title.png"
-              alt="zara logo is here"
-              id="main-logo"
-            />
-          </div>
-  
-          <!-- right part of the nav -->
-          <div id="navbar__right">
-            <div id="search-box" class="nav-right-pad">
-              <span>SEARCH</span>
-            </div>
-            <div id="login" class="nav-right-pad">LOGIN</div>
-            <div id="help" class="nav-right-pad">HELP</div>
-            <div id="cart" class="nav-right-pad">CART</div>
-          </div>
-        </div>
-      </nav>
+  <div id="navBar"></div>
  <div id="bucket">
   <div id ="box">
 
@@ -143,4 +120,13 @@
 
 
   <script src="/Script/signUp.js"></script>
+  
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
     
+  <script>
+    $(function () {
+        $("#navBar").load("/Pages/nav.html")
+    })
+</script>
+
+

@@ -8,31 +8,9 @@
     <title>Address & Payment Page</title>
   </head>
   <body>
-
+    <div id="navBar"></div>
     <div id="bucket">
-    <nav>
-      <div id="navbar__main">
-        <!-- left part of the nav -->
-        <div id="navbar__left">
-          <img src="/Logos/menu.png" alt="hamburger menu" id="hamburger" />
-          <img
-            src="/Logos/zara-title.png"
-            alt="zara logo is here"
-            id="main-logo"
-          />
-        </div>
-
-        <!-- right part of the nav -->
-        <div id="navbar__right">
-          <div id="search-box" class="nav-right-pad">
-            <span>SEARCH</span>
-          </div>
-          <div id="login" class="nav-right-pad">LOGIN</div>
-          <div id="help" class="nav-right-pad">HELP</div>
-          <div id="cart" class="nav-right-pad">CART</div>
-        </div>
-      </div>
-    </nav>
+   
     <div id="container">
 
      <div id="heading"><h3>CHOOSE YOUR SHIPPING ADDRESS</h3></div>
@@ -128,8 +106,16 @@
      
 
 
-
+   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
      
   </body>
-  <script src="/Script/address&payment.js"></script>
+  
+
+
 </html>
+<script>
+  $(function () {
+      $("#navBar").load("/Pages/nav.html")
+  })
+</script>
+<script src="/Script/address&payment.js"></script>

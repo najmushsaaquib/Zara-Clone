@@ -1,0 +1,41 @@
+#container{
+    display:flex;
+    /* justify-content: space-between; */
+    border:1px solid red ;
+   height:70px;
+}
+#container>div{
+    border:1px solid red ;
+    width:33%;
+}
+#box{
+  weidth:70px;  
+}
+#cartnav{
+    border:1px solid red ;    
+}
+#cartnav{
+    width:800px;
+    background-color:#669900
+    ;
+}
+#container h4{
+    color:darkmagenta;
+    margin-top:1px;
+}
+#cartnav>h2{
+
+    color:brown;
+   
+    text-align: center;
+}
+
+#container2{
+    gap:20px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+}
+#container2>div{
+    
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}

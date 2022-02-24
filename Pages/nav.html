@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto+Condensed:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/Logos/zara-title.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/Styles/nav.css" />
+    <title>Nav Bar</title>
+  </head>
+  <body>
+    <!-- ! Main Nav Bar starts form here -->
+    <div id="navbar">
+      <!-- ! Left side of the nav bar -->
+      <div id="navbar__left">
+        <div id="hamdiv">
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              >&times;</a
+            >
+            <a href="/Pages/viewAll.html" class="sideNavHeading">View All</a>
+            <a href="/Pages/women.html" class="sideNavHeading">Women</a>
+
+            <a href="">
+              <ul>
+                <li>Top</li>
+                <li>Jeans</li>
+                <li>Skirt</li>
+                <li>Bags</li>
+                <li>Shoes</li>
+              </ul>
+            </a>
+
+            <a href="/Pages/men.html" class="sideNavHeading">Man</a>
+
+            <a href="">
+              <ul>
+                <li>Shirt</li>
+                <li>Blazer</li>
+                <li>Pant</li>
+                <li>Shoes</li>
+                <li>Perfumes</li>
+              </ul>
+            </a>
+
+            <a href="/Pages/kids.html" class="sideNavHeading">Kids</a>
+
+            <a href="">
+              <ul>
+                <li>Top</li>
+                <li>Jeans</li>
+                <li>Trousers</li>
+                <li>Shoes</li>
+              </ul>
+            </a>
+          </div>
+          <span
+            class="ham"
+            style="font-size: 20px; cursor: pointer"
+            onclick="openNav()"
+            >&#9776;</span
+          >
+        </div>
+
+        <div id="logodiv">
+          <img src="/Logos/zara-logo.png" alt="zara-logo" id="logoimg" />
+        </div>
+      </div>
+
+      <!--  ! Right side of the nav bar -->
+
+      <div id="navbar__right">
+        <div id="login_div">
+          <pre>  <a href="/index.html" id="login" ></a> </pre>
+        </div>
+        <div id="help_div">
+          <pre>Help</pre>
+        </div>
+        <div id="cart_div">
+          <a href="/Pages/cart.html">
+            <img src="/Logos/cart.svg" alt="cart logo" id="cart_logo" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--  ! End of the nav bar -->
+
+  </body>
+  <script src="/Script/nav.js"></script>
+</html>
