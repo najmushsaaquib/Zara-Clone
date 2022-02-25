@@ -19,12 +19,17 @@
 }
 #left>h3{
     padding-top: 40%;
+    grid-template-rows: l;
 }
 #left>p{
   margin-top: 40px;
 }
 #mid>img{
-    width:100%
+    width:100%;
+    grid-template-areas: m;
+}
+#right{
+  grid-template-rows: r;
 }
 #price{
   margin-top: 40px;
@@ -175,6 +180,67 @@
 
   
    
-    
+    @media all and (max-width:410px){
+      #main{
+        /* border: 2px solid red; */
+        /* height: 400px; */
+        /* width: 1000px; */
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+        width: 410px;
+        height: 700px;
+        /* gap: 80px; */
+        /* margin: auto; */
+        margin-top: 20px;
+        /* margin-bottom: 250px; */
+        grid-area: "."
+                    "r"
+                    "m"
+    }
+   
+      .footer { 
+          display : none; 
+          visibility : hidden; 
+      }
+  
+      .india_before{
+        display: none;
+        visibility : hidden;
+      }
+      .india_after{
+        display: none;
+        visibility : hidden;
+      }
+      #right{
+        margin-left: 20px;
+      }
+    #left{
+      display: none;
+        visibility : hidden;
+    }
+    #cartbtn{
+      margin-top: 5px;
+      width: 200px;
+      height: 40px;
+      background-color: #000000;
+      color: aliceblue;
+    }
+    select {
+      display: none;
+        /* visibility : hidden; */
+    }
+    #findSize{
+      display: none;
+        visibility : hidden;
+
+    }
+    #elmentsize{
+      display: none;
+      visibility : hidden;
+
+    }
+
+    }
    
    

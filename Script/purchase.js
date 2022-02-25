@@ -55,6 +55,7 @@ purchesData={
            tax.style.marginTop="5px"
 
       var size=document.createElement("p");
+           size.setAttribute("id","elmentsize")
       size.innerText="SIZE"
       size.style.margin="30px 0px 0px 0px"
 

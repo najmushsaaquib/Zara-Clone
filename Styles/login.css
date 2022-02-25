@@ -364,3 +364,26 @@ ul {
     text-align: end;
     padding-right: 50px;
 }
+
+
+@media all and (max-width:410px){
+
+  #right{
+    display: none;
+        visibility : hidden;
+  }
+  
+  .footer { 
+    display : none; 
+    visibility : hidden; 
+}
+
+/* .india_before{
+  display: none;
+  visibility : hidden;
+}
+.india_after{
+  display: none;
+  visibility : hidden;
+} */
+}
