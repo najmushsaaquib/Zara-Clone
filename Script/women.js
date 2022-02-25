@@ -37,8 +37,13 @@ function visible()
 // script for loading the purchase page after selecting any item
 function purchase(elem)
 {
-    window.location.href = "/pages/purchase.html"
-    localStorage.setItem("purchaseData", JSON.stringify(elem))
+    if (JSON.parse(localStorage.getItem("loginData")).length != 0) {
+        window.location.href = "/pages/purchase.html"
+        localStorage.setItem("purchaseData", JSON.stringify(elem))
+    }
+    else {
+        window.location.href = "/pages/login.html"
+    }
 }
 //functionality for the slider bar which provide filter for price
 function sliderFunction(){

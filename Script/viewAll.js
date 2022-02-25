@@ -37,8 +37,13 @@ function visible()
 
 function purchase(elem)
 {
-    window.location.href = "/pages/purchase.html"
-    localStorage.setItem("purchaseData", JSON.stringify(elem))
+    if (JSON.parse(localStorage.getItem("loginData")).length != 0) {
+        window.location.href = "/pages/purchase.html"
+        localStorage.setItem("purchaseData", JSON.stringify(elem))
+    }
+    else {
+        window.location.href = "/pages/login.html"
+    }
 }
 
 document.querySelector("#viewAll").addEventListener("click", function () {
@@ -56,14 +61,14 @@ document.querySelector("#kids").addEventListener("click", function () {
 
 
 // ad pop up script
-window.addEventListener("load", function(){
-    setTimeout(
-        function open(event){
-            document.querySelector(".popup").style.display = "block";
-        },
-        1000 
-    )
-});
-document.querySelector("#close").addEventListener("click", function(){
-    document.querySelector(".popup").style.display = "none";
-});
+// window.addEventListener("load", function(){
+//     setTimeout(
+//         function open(event){
+//             document.querySelector(".popup").style.display = "block";
+//         },
+//         1000 
+//     )
+// });
+// document.querySelector("#close").addEventListener("click", function(){
+//     document.querySelector(".popup").style.display = "none";
+// });
