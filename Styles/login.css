@@ -277,23 +277,25 @@ ul {
   width: 100%;
   height: 350px;
   display: flex;
+  margin-left: 100px;
   justify-content: left;
 }
 
 .footer>div{
   width: 200px;
   height: 350px;
-
-  margin-left: 50px;
+  
+  margin-left: -30px;
 }
 .footer>div div{
   width: 200px;
   height: 35px;
   display: flex;
   justify-content: left;
+  
 }
 .footer h4{
-  font-size: 18px;
+  font-size: 15px;
   text-align: left;
   padding-bottom: 20px;
   
@@ -301,9 +303,12 @@ ul {
 .footer P
 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 13px;
+  font-size: 9px;
   font-style: normal;
   padding-top: 10px;
+}
+.footer>div:nth-child(4){
+  margin-left: -80px;
 }
 
 
@@ -351,41 +356,11 @@ ul {
 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 100;
-    font-size: 12px;
+    font-size: 9px;
+    margin-top: 3px;
 }
 .india_after>div div:last-child
 {
     text-align: end;
     padding-right: 50px;
 }
-.last{
-   
-    width: 100%;
-    height: 200px;
-    margin-top: 300px;
-    
-   }
-  
-   
-    
-   
-   .last>div{
-   
-    width: 100%;
-    height: 100px;
-    
-   }
-   .last>div>div{
-   
-    width: 98%;
-    height: 75px;
-    display: flex;
-    justify-content: end;
- }
- .last>div>div div{
-   
-    width: 300px;
-    height: 75px;
-    display: flex;
-    justify-content: center;
- }
