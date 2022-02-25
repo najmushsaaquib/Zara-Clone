@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Styles/viewAll.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <title>Home Page</title>
+</head>
+<script src="/Data/data.js"></script>
+<body>
+<div id="navBar"></div>
+
+    <!-- type of items--- like: top/ perfume etc. -->
+    <div id="type">
+        <p id="viewAll">VIEW ALL</p>
+        <p id="women">WOMEN</p>
+        <p id="men">MEN</p>
+        <p id="kids">KIDS</p>
+    </div>
+
+    <!-- pop up add -->
+    <div class="popup">
+        <button id="close">&times;</button>
+        <h2>Enjoying Shopping With Us!!!!!</h2>
+        <p>
+            For better experience proceed to login
+        </p>
+        <p>If logged in, click on "&times;" button</p>
+        <a id="popupLogin" href="/Pages/login.html">Login</a>
+
+    </div>
+    <!-- first image -->
+    <div id="firstImage"><img
+            src="https://static.zara.net/photos///2022/V/0/1/p/7901/506/251/17/w/908/7901506251_1_1_1.jpg?ts=1645188259703"
+            alt="1st image"></div>
+    <div id="text">
+        <h4>WELCOME TO ZARA</h4>
+        <p>OUR COLLECTION ENCOMPASSES ALL OF THE SEASON'S BIGGEST TRENDS, FROM TRADITION-STEEPED
+            HERITAGE CHECKS</p>
+    </div>
+    <div id="container"></div>
+</body>
+<!-- <script src="/Script/nav.js"></script> -->
+<script>
+    $(function() {
+        $("#navBar").load("/Pages/nav.html")
+    })
+</script>
+<script>
+    function openWindow() {
+        document.getElementById("filterWindow").style.width = "400px";
+        document.getElementById("filterWindow").style.background = "black";
+    }
+</script>
+<script src="/Script/viewAll.js"></script>
+
+</html>
+
