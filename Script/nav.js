@@ -18,29 +18,16 @@ function takeMe() {
 }
 
 
-let loginData = [];
-
-let obj = {
-  name: "Najmush Saaquib",
-  email: "najmush@gmail.com",
-  password: "password",
-};
-
-// loginData.push(obj)
-// console.log(loginData[0].name)
-
-localStorage.setItem("loginData", JSON.stringify(loginData));
-
+let loginData = JSON.parse(localStorage.getItem("loginData")) || [];
 var login = document.querySelector("#login");
 // login.innerText = JSON.parse(localStorage.getItem("loginData")) || "Login"
 
-if (loginData[0] != undefined) {
-  login.innerText = loginData[0].name;
+if (loginData.length != 0) {
+  login.innerHTML = loginData[0].name;
 } else {
   login.innerText = "Login";
 }
 
-console.log(login);
 
 //   <script>
 //     var login = document.querySelector("#login");

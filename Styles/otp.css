@@ -82,3 +82,16 @@
     
 }
 
+@media (max-width: 391px) {
+    #outer-container {
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* background-color: yellow; */
+      margin:  auto;
+      padding: 10px;
+    }
+
+   
+}

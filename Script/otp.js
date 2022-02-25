@@ -1,8 +1,6 @@
 
-    document.querySelector("#submit").addEventListener("submit", takeMe);
+    document.querySelector("#form").addEventListener("submit", takeMe);
 
-    let code1 = document.querySelector("#code1").value || 0;
-    console.log(code1)
 
 
     function takeMe(event) {
@@ -19,6 +17,16 @@
             window.location.href = "/index.html"
         }
 
-        else alert("Wrong OTP entered. Please try again")
-        console.log(code1,code4)
+        else 
+        {
+
+            alert("Wrong OTP entered. Please try again")
+        }
+
+            document.querySelector("#code1").value = null;
+            document.querySelector("#code2").value = null;
+            document.querySelector("#code3").value = null;
+            document.querySelector("#code4").value = null;
+
+        console.log(code1,code4, "Hello ")
     }
