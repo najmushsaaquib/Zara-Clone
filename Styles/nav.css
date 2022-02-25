@@ -65,6 +65,7 @@ body {
 #navbar__right pre {
   font-family: "Neue-Helvetica", Arial, Sans-serif;
   font-size: 12px;
+  margin-top: 4px;
 }
 
 #logodiv {
@@ -164,24 +165,32 @@ ul {
 }
 /* ! Navbar styles Ends Here*/
 
-
-
 /*  ! Chat Functionality Styles */
 
 .open-button {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   /* padding: 16px 20px; */
-  border: none;
+  border: 1px solid black;
   cursor: pointer;
   opacity: 0.8;
   position: fixed;
-  bottom: 93px;
-  right: 28px;
-  height:40px;
-  width: 50px;
+  bottom: 50px;
+  right: 8px;
+  height: 40px;
+  width: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: "Neue-Helvetica", Arial, Sans-serif;
 }
 
+#chaticon {
+  max-width: 14px;
+  /* margin-top:4px; */
+  margin-right: 12px;
+}
 
 .open-button2 {
   background-color: black;
@@ -193,22 +202,20 @@ ul {
   position: fixed;
   bottom: 23px;
   left: 795px;
-  height:40px;
+  height: 40px;
   width: 190px;
-  
 }
-
 
 .chat-popup {
-    
   display: none;
   position: fixed;
-  bottom: 83px;
-  right: 15px;
+  bottom: 50px;
+  right: 8px;
   border: 3px solid #f1f1f1;
   z-index: 9;
+  text-transform: uppercase;
+  font-family: "Neue-Helvetica", Arial, Sans-serif;
 }
-
 
 .form-container {
   max-width: 300px;
@@ -216,6 +223,9 @@ ul {
   background-color: white;
 }
 
+.form-container h1 {
+  text-transform: uppercase;
+}
 
 .form-container textarea {
   width: 90%;
@@ -225,14 +235,13 @@ ul {
   background: #f1f1f1;
   resize: none;
   min-height: 100px;
+  font-family: "Neue-Helvetica", Arial, Sans-serif;
 }
-
 
 .form-container textarea:focus {
   background-color: #ddd;
   outline: none;
 }
-
 
 .form-container .btn {
   background-color: black;
@@ -241,20 +250,76 @@ ul {
   border: none;
   cursor: pointer;
   width: 100%;
-  margin-bottom:10px;
+  margin-bottom: 10px;
   opacity: 0.8;
+  font-family: "Neue-Helvetica", Arial, Sans-serif;
 }
-
 
 .form-container .cancel {
   background-color: red;
 }
 
-
-.form-container .btn:hover, .open-button:hover {
+.form-container .btn:hover,
+.open-button:hover {
   opacity: 1;
 }
 
-.form-container .btn:hover, .open-button2:hover {
+.form-container .btn:hover,
+.open-button2:hover {
   opacity: 1;
+}
+
+/* ! Help Modal Thing */
+
+#help_div {
+  cursor: pointer;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(255, 255, 255); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  background: transparent;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: 60px;
+  margin-top: -50px;
+  padding: 8px;
+  border: 1px solid #888;
+  width: 20%;
+  border-radius: 5px;
+
+  /* max-height: 40px; */
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.modal-content > pre {
+  text-transform: capitalize;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }

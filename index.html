@@ -21,7 +21,7 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
-    <link rel="shortcut icon" href="/Logos/zara-new.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/Logos/zara-logo.png" type="image/x-icon" />
 
     <link rel="stylesheet" href="/Styles/index.css" />
     <title>Zara India</title>
@@ -92,7 +92,18 @@
           <pre>  <a href="/Pages/login.html">Login</a> </pre>
         </div>
         <div id="help_div">
-          <pre>  <a href="/index.html">Help</a> </pre>
+          <!-- Trigger/Open The Modal -->
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <pre>Reach us on : helpdesk@zara.com</pre>
+              <pre>Or Give a call on +1 11-4444-2620</pre>
+            </div>
+          </div>
+
+          <pre id="myBtn">Help</pre>
         </div>
         <div id="cart_div">
           <a href="/Pages/cart.html">
@@ -112,14 +123,14 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <img
-                src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-new/subhome-xmedia-08//w/771/IMAGE-large-landscape-59c32571-389d-4fb2-ab43-2af31224787e-default_0.jpg?ts=1645447500949"
+                src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-new/subhome-xmedia-08-2//w/771/IMAGE-large-landscape-df408c98-18e7-463d-b682-6ce00be7e3fa-default_0.jpg?ts=1645708781229"
                 alt=""
                 class="womenimg"
               />
             </div>
             <div class="swiper-slide">
               <img
-                src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-man-new/subhome-xmedia-08//w/771/IMAGE-large-landscape-d02522fe-4f18-4e0f-91fd-4f347570b7fa-default_0.jpg?ts=1645519610839"
+                src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-man-new/subhome-xmedia-08-2//w/771/IMAGE-large-landscape-6e9566d1-6b1e-48c2-bd15-ba18d3999615-default_0.jpg?ts=1645618888524"
                 alt=""
                 class="menimg"
               />
@@ -136,28 +147,38 @@
     <!-- ! Second div of the page starts here -->
     <div id="second">
       <img
-        src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-dresses/subhome-xmedia-07//w/771/IMAGE-large-landscape-4e161707-abe9-447b-8c35-d17430954be1-default_0.jpg?ts=1645188000472"
+        src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-dresses/subhome-xmedia-08//w/771/IMAGE-large-landscape-21f4daa8-2fa8-47ca-a7e3-f330f86a02ec-default_0.jpg?ts=1645709776551"
         alt=""
         class="womenimg"
       />
 
       <ol>
-        <li>New</li>
-        <li>Dresses</li>
-        <li>Shoes</li>
-        <li>Lifestyle</li>
+        <li><a href="/Pages/viewAll.html">New</a></li>
+        <li><a href="/Pages/viewAll.html">Dresses</a></li>
+        <li><a href="/Pages/viewAll.html">Shoes</a></li>
+        <li><a href="/Pages/viewAll.html">Perfumes</a></li>
       </ol>
     </div>
 
     <!-- ! Third div of the page starts here -->
 
     <div id="third">
-      <video src="/Videos/third.mp4" autoplay loop muted></video>
+      <img
+        src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-shoes-bags/subhome-xmedia-08//w/771/IMAGE-large-landscape-b1c8fbe8-bf41-4aa7-bad0-794f0713c4b9-default_0.jpg?ts=1645713783552"
+        alt=""
+        class="womenimg"
+      />
     </div>
 
     <!-- ! Fourth div of the page starts here -->
 
     <div id="fourth">
+      <video src="/Videos/third.mp4" autoplay loop muted></video>
+    </div>
+
+    <!-- ! Fifth div of the page starts here -->
+
+    <div id="fifth">
       <video src="/Videos/fourth.mp4" autoplay loop muted></video>
     </div>
 
@@ -209,5 +230,3 @@
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="/Script/index.js"></script>
 </html>
-
-
