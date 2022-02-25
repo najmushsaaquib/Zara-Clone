@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto+Condensed:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="/Logos/zara-title.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/Logos/zara-new.png" type="image/x-icon" />
     <link rel="stylesheet" href="/Styles/nav.css" />
     <title>Nav Bar</title>
   </head>
@@ -91,6 +91,31 @@
     </div>
     <!--  ! End of the nav bar -->
 
+
+    <!-- !  Chat Functionality Starts fomr here -->
+
+    <button class="open-button" onclick="openForm()">Chat</button>
+ 
+    <div class="chat-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+       
+        <h1>Chat</h1>
+        
+    
+        <label for="msg"><b>Message</b></label>
+        <textarea placeholder="Zara here, how can I help you...?" name="msg" required></textarea>
+    
+        <button type="submit" class="btn">Send</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+      
+
+    <!-- !  Chat Functionality ends here -->
+
+
+
   </body>
   <script src="/Script/nav.js"></script>
+  
 </html>

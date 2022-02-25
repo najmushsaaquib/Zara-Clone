@@ -17,6 +17,7 @@ function takeMe() {
   window.location.href = "/index.html";
 }
 
+
 let loginData = [];
 
 let obj = {
@@ -25,7 +26,7 @@ let obj = {
   password: "password",
 };
 
-// loginData.push(obj)
+loginData.push(obj)
 // console.log(loginData[0].name)
 
 localStorage.setItem("loginData", JSON.stringify(loginData));
@@ -45,3 +46,14 @@ console.log(login);
 //     var login = document.querySelector("#login");
 //     login.innerText = JSON.parse(localStorage.getItem("arunData")) || "Login"
 // </script>
+
+
+// Chat functionality Codes
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
