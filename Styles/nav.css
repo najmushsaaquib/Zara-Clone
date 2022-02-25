@@ -42,7 +42,7 @@ body {
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
-  position: sticky;
+  position: fixed;
   z-index: 100;
   top: 0;
   overflow: hidden;
