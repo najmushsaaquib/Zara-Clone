@@ -1,6 +1,8 @@
 #container{
+  
     padding-left: 30px;
     padding-bottom: 30px;
+    
 }
 
 #heading{
@@ -139,7 +141,7 @@ color:black;
     opacity: 0.8;
     position: fixed;
     bottom: 23px;
-    left: 795px;
+    right: 28px;
     height:40px;
     width: 190px;
     
@@ -205,4 +207,440 @@ color:black;
   .form-container .btn:hover, .open-button2:hover {
     opacity: 1;
   }
+
+
+
+/* -----------Media query-------- */
+
+
+  @media all and (min-width: 381px) and (max-width: 700px) {
+    #container{
+      padding-left: 30px;
+      padding-bottom: 30px;
+  }
+  
+  #heading{
+      margin-top:160px;
+      margin-bottom:100px;
+     
+  }
+  
+  #Storepick{
+      
+      display:flex;
+      grid-template-columns: repeat(2,1fr);
+  }
+  #Storepick>div{
+  color:black;
+  
+  }
+  #Storepick>div>h2{
+      margin-top:2px;
+      margin-bottom:3px;
+      
+      font-size: 11px;
+  }
+  #Storepick>div>p{
+      margin-top:2px;
+      margin-bottom:3px;
+      font-size: 8px;
+  }
+  
+  #HomeDelivery{
+      
+      display:flex;
+      grid-template-columns: repeat(2,1fr);
+  }
+  #HomeDelivery>div{
+       
+      height:100%;
+  }
+  #HomeDelivery>div>h2{
+      margin-top:2px;
+      margin-bottom:4px;
+      
+      font-size: 9px;
+  }
+  #HomeDelivery>div>p{
+      margin-top:2px;
+      margin-bottom:4px;
+      font-size: 7px;
+  }
+  #btab{
+      margin-top:90px;
+      display:flex;
+       
+  
+  }
+  #btab>div{
+       
+      flex-basis:150px;
+      
+  }
+  
+  #sldiv{
+      display:flex;
+      justify-content: space-between;
+      margin-top:60px;
+       
+      font-size: 10px;
+  }
+  #sldiv>div{
+      color: black; 
+  }
+  
+  #ldiv{
+   height:80px;
+   width:140px;
+  }
+  #ldiv>p{
+      margin-top:90px;
+      font-size:7px;  
+  }
+  #btab>div>h3{
+      font-size:11px;
+  }
+  #btab>div>a p{
+      font-size:7px;
+  }
+  #total{
+      
+      
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      opacity: 0.8;
+      position: fixed;
+      bottom: 23px;
+      right: 200px;
+      width: 70px;
+      height:35px;
+     
+  
+  }
+  #total>p{
+      
+      border-bottom: 40px ;
+      color: black;
+      
+      
+      
+      
+  }
+  
+  
+  
+  .open-button {
+      background-color: black;
+      color: white;
+      /* padding: 16px 20px; */
+      border: none;
+      cursor: pointer;
+      opacity: 0.8;
+      position: fixed;
+      bottom: 93px;
+      right: 28px;
+      height:40px;
+      width: 50px;
+    }
+  
+  
+    .open-button2 {
+      background-color: black;
+      color: white;
+      /* padding:16px 20px; */
+      border: none;
+      cursor: pointer;
+      opacity: 0.8;
+      position: fixed;
+      bottom: 23px;
+      right: 28px;
+      height:30px;
+      width: 100px;
+      
+    }
+    
+    
+    .chat-popup {
+        
+      display: none;
+      position: fixed;
+      bottom: 83px;
+      right: 15px;
+      border: 3px solid #f1f1f1;
+      z-index: 9;
+    }
+    
+    
+    .form-container {
+      max-width: 300px;
+      padding: 20px;
+      background-color: white;
+    }
+    
+   
+    .form-container textarea {
+      width: 90%;
+      padding: 15px;
+      margin: 5px 0 20px 0;
+      border: none;
+      background: #f1f1f1;
+      resize: none;
+      min-height: 100px;
+    }
+    
+    
+    .form-container textarea:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+    
+   
+    .form-container .btn {
+      background-color: black;
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom:10px;
+      opacity: 0.8;
+    }
+    
+    
+    .form-container .cancel {
+      background-color: red;
+    }
+    
+    
+    .form-container .btn:hover, .open-button:hover {
+      opacity: 1;
+    }
+  
+    .form-container .btn:hover, .open-button2:hover {
+      opacity: 1;
+    }
+  
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* small */
+  @media all and (min-width: 50px) and (max-width: 380px) {
+   
+
+    #container{
+      padding-left: 30px;
+      padding-bottom: 30px;
+      
+  }
+  
+  #heading{
+      margin-top:160px;
+      margin-bottom:100px;
+      
+     
+  }
+  
+  #Storepick{
+      
+      display:flex;
+      grid-template-columns: repeat(2,1fr);
+  }
+  #Storepick>div{
+  color:black;
+  
+  }
+  #Storepick>div>h2{
+      margin-top:2px;
+      margin-bottom:3px;
+      
+      font-size: 11px;
+  }
+  #Storepick>div>p{
+      margin-top:2px;
+      margin-bottom:3px;
+      font-size: 6px;
+  }
+  
+  #HomeDelivery{
+      
+      display:flex;
+      grid-template-columns: repeat(2,1fr);
+  }
+  #HomeDelivery>div{
+       
+      height:100%;
+  }
+  #HomeDelivery>div>h2{
+      margin-top:2px;
+      margin-bottom:4px;
+      
+      font-size: 7px;
+  }
+  #HomeDelivery>div>p{
+      margin-top:2px;
+      margin-bottom:4px;
+      font-size: 6px;
+  }
+  #btab{
+      margin-top:90px;
+      display:flex;
+       
+  
+  }
+  #btab>div{
+       
+      flex-basis:150px;
+      
+  }
+  
+  #sldiv{
+      display:flex;
+      justify-content: space-between;
+      margin-top:60px;
+       
+      font-size: 6px;
+  }
+  #sldiv>div{
+      color: black; 
+  }
+  
+  #ldiv{
+   height:60px;
+   width:140px;
+  }
+  #ldiv>p{
+      margin-top:90px;
+      font-size:6px;  
+  }
+  #btab>div>h3{
+      font-size:10px;
+  }
+  #btab>div>a p{
+      font-size:6px;
+  }
+  #total{
+      
+      
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      opacity: 0.8;
+      position: fixed;
+      bottom: 23px;
+      right: 150px;
+      width: 70px;
+      height:35px;
+  
+  }
+  #total>p{
+      
+      border-bottom: 40px ;
+      color: black;
+      
+      
+      
+      
+  }
+  
+  
+  
+  .open-button {
+      background-color: black;
+      color: white;
+      /* padding: 16px 20px; */
+      border: none;
+      cursor: pointer;
+      opacity: 0.8;
+      position: fixed;
+      bottom: 93px;
+      right: 28px;
+      height:40px;
+      width: 50px;
+    }
+  
+  
+    .open-button2 {
+      background-color: black;
+      color: white;
+      /* padding:16px 20px; */
+      border: none;
+      cursor: pointer;
+      opacity: 0.8;
+      position: fixed;
+      bottom: 23px;
+      right: 28px;
+      height:20px;
+      width: 70px;
+      
+    }
+    
+    
+    .chat-popup {
+        
+      display: none;
+      position: fixed;
+      bottom: 83px;
+      right: 15px;
+      border: 3px solid #f1f1f1;
+      z-index: 9;
+    }
+    
+    
+    .form-container {
+      max-width: 300px;
+      padding: 20px;
+      background-color: white;
+    }
+    
+   
+    .form-container textarea {
+      width: 90%;
+      padding: 15px;
+      margin: 5px 0 20px 0;
+      border: none;
+      background: #f1f1f1;
+      resize: none;
+      min-height: 100px;
+    }
+    
+    
+    .form-container textarea:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+    
+   
+    .form-container .btn {
+      background-color: black;
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom:10px;
+      opacity: 0.8;
+    }
+    
+    
+  
+    }
 

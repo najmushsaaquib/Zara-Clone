@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #top-section {
+        width: 60%;
+        height: 200px;
+        margin: auto;
+      }
+      #top-section > h1 {
+        /* width: 65%;
+        text-align: center;
+        margin: auto; */
+        padding: 0% 10%;
+        text-align: center;
+      }
+      #top-section > p {
+        text-align: center;
+      }
+
+      #container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+        width: 80%;
+        margin: auto;
+      }
+
+      #container > div {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        text-align: center;
+      }
+
+      h3 + h1 {
+        color: green;
+      }
+
+      /* #container > div > p:nth-child(2) {
+        padding: 0px 10px;
+      } */
+
+      p + p {
+        padding: 0px 10px;
+      }
+
+      .button-outer,
+      .solid-button {
+        font-size: 14px;
+        padding: 5px 15px;
+        background-color: white;
+        color: rgb(35, 35, 209);
+        border: 1px solid rgb(35, 35, 209);
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+
+      .solid-button {
+        background: rgb(35, 35, 209);
+        color: white;
+      }
+
+      @media all and (min-width: 381px) and (max-width: 700px) {
+        #container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      /* small */
+      @media all and (min-width: 50px) and (max-width: 380px) {
+        #container {
+          grid-template-columns: repeat(1, 1fr);
+        }
+        #top-section > h1 {
+          padding: 0%;
+        }
+        #top-section {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="top-section">
+      <h1>Choose a plan that right for your business</h1>
+      <p>
+        We collect reviews from our users so you can get an honest opinion of
+        what an experience with our website are really like!
+      </p>
+    </div>
+
+    <!-- bottom section -->
+
+    <div id="container">
+      <div>
+        <h3>Starter Plan</h3>
+        <h1>Free</h1>
+        <p>Per Month</p>
+        <p>
+          We collect reviews from our users so you can get an honest opinion of
+          what an experience with our website.
+        </p>
+        <button class="button-outer">Start Now</button>
+      </div>
+      <div>
+        <h3>Starter Plan</h3>
+        <h1>Free</h1>
+        <p>Per Month</p>
+        <p>
+          We collect reviews from our users so you can get an honest opinion of
+          what an experience with our website.
+        </p>
+        <button class="solid-button">Start Now</button>
+      </div>
+      <div>
+        <h3>Starter Plan</h3>
+        <h1>Free</h1>
+        <p>Per Month</p>
+        <p>
+          We collect reviews from our users so you can get an honest opinion of
+          what an experience with our website.
+        </p>
+        <button class="button-outer">Start Now</button>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+

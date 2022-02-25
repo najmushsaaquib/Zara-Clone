@@ -1,9 +1,11 @@
 #container{
     margin-top:120px;
     margin-left: 60px;
+    
+    margin-right:20px
 }
 #card{
-    border:1px solid;
+    
     height:60px;
     width:100px;
     margin-bottom: 40px;
@@ -12,8 +14,17 @@
     height: 100%;
     width:100%;
 }
+#box{
+  display:grid;
+  
+  grid-template-columns: repeat(2,1fr);
+ 
+ 
+}
 #box>div{
+  width:300px;
  padding-bottom:30px;
+ 
 }
 
 * {
@@ -72,17 +83,17 @@ font-size:10px;
 
 
 .open-button2 {
-background-color: black;
-color: white;
-/* padding:16px 20px; */
-border: none;
-cursor: pointer;
-opacity: 0.8;
-position: fixed;
-bottom: 23px;
-left: 795px;
-height:40px;
-width: 190px;
+  background-color: black;
+  color: white;
+  /* padding:16px 20px; */
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  height:40px;
+  width: 190px;
 
 }
 .form-container .btn:hover, .open-button2:hover {
@@ -90,22 +101,7 @@ opacity: 1;
 }
 
 
-#box{  
-    display:flex; 
-    position: relative;
-    padding: 15px 0 0;
-    margin-top: 60px;
-    width: 790px;
-   
-    
-  }
-  #box>div{
-    
-    width:300px;
-    margin-right: 20px;
 
-  }
-  
   
   .infrm {
     font-family: inherit;
@@ -119,3 +115,244 @@ opacity: 1;
     background: transparent;
     transition: border-color red;
   }
+
+
+
+
+
+
+
+
+
+  /* -----------Media query-------- */
+
+
+  @media all and (min-width: 381px) and (max-width: 700px) {
+   
+    #container{
+      margin-top:120px;
+      margin-left: 60px;
+  }
+  #card{
+      
+      height:60px;
+      width:100px;
+      margin-bottom: 40px;
+      
+  }
+  #card>img{
+      height: 100%;
+      width:100%;
+  }
+  #box{
+    display:grid;
+    
+    grid-template-columns: repeat(1,1fr);
+  
+   
+  }
+  #box>div{
+    width:300px;
+   padding-bottom:30px;
+   
+   
+  }
+  
+  
+  * {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  }
+  
+  body {
+  font-family: Poppins;
+  }
+  
+  
+  
+  #btab{
+  
+  margin-top:180px;
+  display:flex;
+  
+  margin-bottom:30px;
+  
+  
+  }
+  #btab>div{
+  
+  flex-basis:150px;
+  
+  }
+  
+  #sldiv{
+  padding-top:150px;
+  display:flex;
+  justify-content: space-between;
+  margin-top:60px;
+  
+  font-size: 10px;
+  }
+  #sldiv>div{
+  color: black;   
+  }
+  
+  #ldiv{
+  height:80px;
+  width:140px;
+  }
+  #ldiv>p{
+  margin-top:90px;
+  font-size:10px;  
+  }
+  #btab>div>h3{
+  font-size:15px;
+  }
+  #btab>div>a p{
+  font-size:10px;
+  }
+  
+  
+  .open-button2 {
+  background-color: black;
+    color: white;
+    /* padding:16px 20px; */
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 30px;
+    height:30px;
+    width: 140px;
+  }
+  .form-container .btn:hover, .open-button2:hover {
+  opacity: 1;
+  }
+  
+    
+    
+    .infrm {
+      font-family: inherit;
+      width: 100%;
+      border: 0;
+      border-bottom: 2px solid black;
+      outline: 0;
+      font-size:10px;
+      color:black;
+      padding: 7px 0;
+      background: transparent;
+      transition: border-color red;
+    }
+  
+
+  }
+
+
+
+  /* small */
+  @media all and (min-width: 50px) and (max-width: 380px) {
+   
+    #container{
+      margin-top:120px;
+      margin-left: 60px;
+  }
+  #card{
+      
+      height:60px;
+      width:100px;
+      margin-bottom: 40px;
+  }
+  #card>img{
+      height: 100%;
+      width:100%;
+  }
+  #box{
+    display:grid;
+    
+    grid-template-columns: repeat(1,1fr);
+  
+   
+  }
+  #box>div{
+    width:300px;
+   padding-bottom:30px;
+   
+   
+  }
+  
+  * {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  }
+  
+  body {
+  font-family: Poppins;
+  }
+  
+  
+  
+  #btab{
+  
+  margin-top:180px;
+  display:flex;
+  
+  margin-bottom:30px;
+  
+  
+  }
+  #btab>div{
+  
+  flex-basis:150px;
+  
+  }
+  
+  #sldiv{
+  padding-top:150px;
+  display:flex;
+  justify-content: space-between;
+  margin-top:60px;
+  
+  font-size: 10px;
+  }
+  #sldiv>div{
+  color: black;   
+  }
+  
+  #ldiv{
+  height:80px;
+  width:140px;
+  }
+  #ldiv>p{
+  margin-top:90px;
+  font-size:10px;  
+  }
+  #btab>div>h3{
+  font-size:15px;
+  }
+  #btab>div>a p{
+  font-size:10px;
+  }
+  
+  
+  .open-button2 {
+    background-color: black;
+    color: white;
+    /* padding:16px 20px; */
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 20px;
+    height:20px;
+    width: 100px;
+  }
+  .form-container .btn:hover, .open-button2:hover {
+  opacity: 1;
+  }
+  
+    }
+

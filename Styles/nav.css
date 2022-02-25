@@ -183,21 +183,6 @@ ul {
 }
 
 
-.open-button2 {
-  background-color: black;
-  color: white;
-  /* padding:16px 20px; */
-  border: none;
-  cursor: pointer;
-  opacity: 0.8;
-  position: fixed;
-  bottom: 23px;
-  left: 795px;
-  height:40px;
-  width: 190px;
-  
-}
-
 
 .chat-popup {
     
