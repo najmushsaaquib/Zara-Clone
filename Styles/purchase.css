@@ -1,0 +1,202 @@
+/* here start purchespage */
+
+#main{
+    /* border: 2px solid red; */
+    height: 400px;
+    width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 80px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 250px;
+}
+
+
+#main>div{
+    /* border: 2px solid blueviolet; */
+
+}
+#left>h3{
+    padding-top: 40%;
+}
+#left>p{
+  margin-top: 40px;
+}
+#mid>img{
+    width:100%
+}
+#price{
+  margin-top: 40px;
+}
+
+
+#cartbtn{
+    margin-top: 13px;
+    width: 250px;
+    height: 40px;
+    background-color: #000000;
+    color: aliceblue;
+       
+}
+#select_select{
+    width: 100px;
+    height: 20px;
+    outline: none;
+    
+    border: transparent;
+  }
+ select option{margin-top: 15px;}
+ select {
+    text-indent: 5px;
+  }
+  #findSize{
+    margin-top: 100px;
+    font-size: 11px;
+    width: 250px;
+    display: flex;
+    
+    justify-content: space-around;
+   
+    
+  }
+  #findSize>p{
+  
+    gap: 20px;
+  }
+  p{
+      font-size: 11px;
+      line-height: 20px;
+     
+      
+  }
+  #price{
+      width: 100px;
+      height: 30px;
+      
+      background-color: #000000;
+      color: white;
+  }
+  #price>h4{
+      padding: 8px;
+  }
+
+
+
+/* footer start here */
+
+.footer{
+  width: 100%;
+  height: 350px;
+  display: flex;
+  justify-content: left;
+}
+
+.footer>div{
+  width: 200px;
+  height: 350px;
+
+  margin-left: 50px;
+}
+.footer>div div{
+  width: 200px;
+  height: 35px;
+  display: flex;
+  justify-content: left;
+}
+.footer h4{
+  font-size: 18px;
+  text-align: left;
+  padding-bottom: 20px;
+  
+}
+.footer P
+{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  padding-top: 10px;
+}
+
+
+
+/* bottom page  */
+
+.india_before
+{
+   
+    width: 100%;
+    height: 300px;
+}
+.india_before hr
+{
+    margin-top: 150px;
+}
+.india_after
+{
+  margin-left: 50px;
+    width: 100%;
+    height: 400px;
+   
+}
+.india_after>div
+{
+   
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+.india_after>div div
+{
+    
+    width: 50%;
+    height: 200px;
+}
+.india_after h4
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.india_after p
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+}
+.india_after>div div:last-child
+{
+    text-align: end;
+    padding-right: 50px;
+}
+.last{
+   
+    width: 100%;
+    height: 200px;
+    margin-top: 300px;
+    
+   }
+  
+   
+    
+   
+   .last>div{
+   
+    width: 100%;
+    height: 100px;
+    
+   }
+   .last>div>div{
+   
+    width: 98%;
+    height: 75px;
+    display: flex;
+    justify-content: end;
+ }
+ .last>div>div div{
+   
+    width: 300px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+ }
+ 

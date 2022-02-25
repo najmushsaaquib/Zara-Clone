@@ -1,76 +1,174 @@
-/* Resetting margin & padding for universal elements  */
 * {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
 }
 
-body {
-  font-family: Poppins;
+@font-face {
+  font-family: "Neue-Helvetica";
+  src: url(/Fonts/Neue/HelveticaNeue.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: "Neue-Helvetica-Cond";
+  src: url(/Fonts/Neue/HelveticaNeue\ BlackCond.ttf) format("truetype");
+}
 
-/* Main navbar styles */
-#navbar__main {
+@font-face {
+  font-family: "Neue-Helvetica-Light";
+  src: url(/Fonts/Helvetica-Neue-Font/Helvetica\ Neue\ UltraLight/Light.ttf)
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Low";
+  src: url(/Fonts/Low/Light.ttf) format("truetype");
+}
+
+body {
+  font-family: "Neue-Helvetica", Arial, Sans-serif;
+
+  font-family: Arial, Sans-serif;
+  /* font-family: "Low"; */
+}
+
+/* !  Main navbar styling starts from here*/
+
+#navbar {
   width: 100%;
-  height: 125px;
-  /* background-color: rgb(161, 161, 161); */
+  height: 105px;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
-  position: fixed;
+  position: sticky;
+  z-index: 100;
   top: 0;
-  overflow: hidden;
-  border: 1px solid transparent;
 }
 
+/* #navbar:hover{
+  background-color: white;
+} */
 
 #navbar__left {
   display: flex;
-  justify-content: space-between;
-  /* background-color: aqua; */
-  width: 25%;
-  border: 1px solid transparent;
+  width: 26%;
+}
 
-  box-sizing: content-box;
+#logodiv {
+  display: flex;
+  width: 90%;
+}
+
+#logodiv > img {
+  margin-left: 80px;
+  margin-top: 2px;
+  cursor: pointer;
 }
 
 #navbar__right {
-  /* background-color: rgb(231, 217, 87); */
   width: 24%;
   display: grid;
-  grid-template-columns: 50% 30% 10% 10%;
-  gap: 15px 0px 0px 0px;
+  grid-template-columns: 50% 30% 20%;
+  gap: 18px 0px 0px 0px;
+  text-transform: uppercase;
 }
 
-#main-logo {
-  max-width: 215px;
-  height: 87%;
-  /* margin-right: 10px; */
-  padding-bottom: 15px;
-  align-self: top;
+#navbar__right pre {
+  font-family: "Neue-Helvetica", Arial, Sans-serif;
+  font-size: 12px;
 }
 
-#hamburger {
-  max-width: 40px;
-  height: 18px;
-  margin-top: 3px;
-  margin-left: 8px;
+a,
+a:hover,
+a:focus,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: black;
 }
 
-.nav-right-pad {
-  padding-top: 5px;
-  font-size: 14px;
+#hamdiv {
+  width: 10%;
 }
+
+#cart_logo {
+  max-width: 80px;
+  cursor: pointer;
+}
+
+/* ! Hamburger Menu Side Bar  */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: transparent; /* rgba(255, 37, 37, 0.01); */
+  overflow-x: hidden;
+  padding-top: 130px;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.sidenav a {
+  padding: 4px 8px 4px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+.sidenav a:hover {
+  color: #1b1b1b;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left: -13px;
+  font-size: 34px;
+}
+
+.sideNavHeading {
+  font-size: 18px;
+}
+
+.sidenav li {
+  margin: 0%;
+  font-size: 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+/* ! Navbar styles Ends Here*/
 
 #first {
   width: 100%;
-  /* height: 500px; */
+  /* height: 80vh; */
   /* background-color: red; */
   margin: auto;
-  margin-top: 140px;
-  text-align: center;
   margin-bottom: 450px;
+}
+.womenimg,
+.menimg {
+  cursor: pointer;
 }
 
 #second {
@@ -78,6 +176,11 @@ body {
   margin-top: 10px;
   text-align: center;
   margin-bottom: 450px;
+}
+
+#second li {
+  font-size: 14px;
+  padding: 0px 5px;
 }
 
 #third {
@@ -112,6 +215,8 @@ footer > h4 {
   text-transform: uppercase;
 }
 
+/* social media links on the footer */
+
 #social-media {
   display: flex;
   justify-content: center;
@@ -134,3 +239,29 @@ li {
   margin-bottom: 60px;
   text-transform: uppercase;
 }
+
+#bottom-text ul {
+  font-size: 10px;
+}
+
+/* ! Sliding Divs Styles starts here  */
+
+.container {
+  width: 100%;
+  height: 76vh;
+  /* background-color: antiquewhite; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  color: black;
+}
+
+/* ! Sliding Divs Styles ends here  */
+
+
+/* This is a test comment */

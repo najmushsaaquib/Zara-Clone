@@ -4,7 +4,210 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zara Home Page</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto+Condensed:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="shortcut icon" href="/Logos/zara-new.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="/Styles/index.css" />
+    <title>Zara India</title>
   </head>
-  <body></body>
+  <body>
+    <!-- ! Main Nav Bar starts form here -->
+    <div id="navbar">
+      <!-- ! Left side of the nav bar -->
+      <div id="navbar__left">
+        <div id="hamdiv">
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              >&times;</a
+            >
+            <a href="/Pages/viewAll.html" class="sideNavHeading">View All</a>
+            <a href="/Pages/women.html" class="sideNavHeading">Women</a>
+
+            <a href="">
+              <ul>
+                <li>Top</li>
+                <li>Jeans</li>
+                <li>Skirt</li>
+                <li>Bags</li>
+                <li>Shoes</li>
+              </ul>
+            </a>
+
+            <a href="/Pages/men.html" class="sideNavHeading">Man</a>
+
+            <a href="">
+              <ul>
+                <li>Shirt</li>
+                <li>Blazer</li>
+                <li>Pant</li>
+                <li>Shoes</li>
+                <li>Perfumes</li>
+              </ul>
+            </a>
+
+            <a href="/Pages/kids.html" class="sideNavHeading">Kids</a>
+
+            <a href="">
+              <ul>
+                <li>Top</li>
+                <li>Jeans</li>
+                <li>Trousers</li>
+                <li>Shoes</li>
+              </ul>
+            </a>
+          </div>
+          <span
+            class="ham"
+            style="font-size: 20px; cursor: pointer"
+            onclick="openNav()"
+            >&#9776;</span
+          >
+        </div>
+
+        <div id="logodiv">
+          <img src="/Logos/zara-logo.png" alt="zara-logo" id="logoimg" />
+        </div>
+      </div>
+
+      <!--   Right side of the nav bar -->
+
+      <div id="navbar__right">
+        <div id="login_div">
+          <pre>  <a href="/Pages/login.html">Login</a> </pre>
+        </div>
+        <div id="help_div">
+          <pre>  <a href="/index.html">Help</a> </pre>
+        </div>
+        <div id="cart_div">
+          <a href="/Pages/cart.html">
+            <img src="/Logos/cart.svg" alt="cart logo" id="cart_logo" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!--  ! End of the nav bar -->
+
+    <!-- ! First div of the page starts here -->
+
+    <div id="first">
+      <div class="container">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-new/subhome-xmedia-08//w/771/IMAGE-large-landscape-59c32571-389d-4fb2-ab43-2af31224787e-default_0.jpg?ts=1645447500949"
+                alt=""
+                class="womenimg"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-man-new/subhome-xmedia-08//w/771/IMAGE-large-landscape-d02522fe-4f18-4e0f-91fd-4f347570b7fa-default_0.jpg?ts=1645519610839"
+                alt=""
+                class="menimg"
+              />
+            </div>
+            <div class="swiper-slide">
+              <video src="/Videos/Kids.mp4" autoplay loop muted></video>
+            </div>
+            ...
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ! Second div of the page starts here -->
+    <div id="second">
+      <img
+        src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-dresses/subhome-xmedia-07//w/771/IMAGE-large-landscape-4e161707-abe9-447b-8c35-d17430954be1-default_0.jpg?ts=1645188000472"
+        alt=""
+        class="womenimg"
+      />
+
+      <ol>
+        <li>New</li>
+        <li>Dresses</li>
+        <li>Shoes</li>
+        <li>Lifestyle</li>
+      </ol>
+    </div>
+
+    <!-- ! Third div of the page starts here -->
+
+    <div id="third">
+      <video src="/Videos/third.mp4" autoplay loop muted></video>
+    </div>
+
+    <!-- ! Fourth div of the page starts here -->
+
+    <div id="fourth">
+      <video src="/Videos/fourth.mp4" autoplay loop muted></video>
+    </div>
+
+    <!-- ! Footer starts from here -->
+    <footer>
+      <h4>
+        <a href="https://www.zara.com/in/en/z-newsletter-nl1400.html?v1=11110"
+          >Join Our Newsletter
+        </a>
+      </h4>
+
+      <div id="social-media">
+        <ul>
+          <li>
+            <a href="https://www.instagram.com/zara/" target="_blank"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a href="https://www.facebook.com/Zara" target="_blank">Facebook</a>
+          </li>
+          <li>
+            <a href="https://twitter.com/ZARA" target="_blank">Twitter</a>
+          </li>
+          <li>
+            <a href="https://www.pinterest.es/zaraofficial/" target="_blank"
+              >Pinterest</a
+            >
+          </li>
+          <li>
+            <a href="https://www.youtube.com/user/zara" target="_blank"
+              >YouTube</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div id="bottom-foot">
+        <p>Name and address of the manufacturer:</p>
+        <p>Industria de Diseño Textil, SA (INDITEX, SA)</p>
+        <p>
+          Avenida de la Diputación, Edificio Inditex, 15143, Arteixo (A Coruña),
+          Spain
+        </p>
+      </div>
+    </footer>
+  </body>
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="/Script/index.js"></script>
 </html>
+
+

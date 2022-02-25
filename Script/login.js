@@ -1,11 +1,11 @@
 document.querySelector("#form").addEventListener("submit",loginPage)
 
-//  var signupData=JSON.parse(localStorage.getItem("signupData"));
+//  var signupData=JSON.parse(localStorage.getItem("credentials"));
 
 //   console.log(signupdet)
 signupData={
     email:"rajayadavce@gmail.com",
-    password:12345
+    pass:12345
 }
 console.log("raja")
 
@@ -17,15 +17,17 @@ console.log("raja")
          var password=document.querySelector("#formdiv2>input").value;
 
     console.log(email,password)
+    document.querySelector("#login").style.cursor="not-allowed"
     
 
 var flag=false;
         // for(var i=0;i<signupData.length;i++)
         {
             
-            if(signupData.email==email&&signupData.password==password)
+            if(signupData.email==email&&signupData.pass==password)
             {
                 flag=true;
+                // break;
             }
             else
             {
@@ -35,6 +37,15 @@ var flag=false;
         if(flag==true)
         {
             alert("login success")
+            obj={
+                email:document.querySelector("#formdiv1>input").value,
+                pass:document.querySelector("#formdiv2>input").value,
+                flag:true
+            }
+           
+
+            localStorage.setItem("loginData",JSON.stringify(obj))
+            window.location.href="/index.html"
         }
         else{
             alert("wrong details")
