@@ -1,0 +1,432 @@
+#container{
+    
+    margin-right:30px;
+    width:900px;
+    display:flex;
+    justify-content:space-evenly;
+    
+    
+  }
+  #bucket{
+    
+    margin-left:20px;
+    margin-top: 120px;
+    
+  }
+ 
+
+  #sup1{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    
+    
+    gap:10px;
+    
+    margin-top: 10px;
+  }
+  #sup1>input{
+    
+      margin-top:20px;
+      width:190px;
+      margin-right: 20px;
+      
+    
+  }
+
+  #supopt{
+      margin-top:20px;
+      margin:1px solid;
+      
+    
+  }
+  #supopt>label>h6{
+      font-size:11px;
+      margin:1px solid;
+      
+    
+  }
+ 
+  
+  
+  * {
+      margin: 0%;
+      padding: 0%;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Poppins;
+    }
+    
+    
+    #supopt{
+        display: flex;
+    }
+    #button1 {
+      margin-top:40px;
+      margin-bottom:100px;
+      background-color: black;
+      color: white;
+      /* padding:16px 20px; */
+      border: none;
+      cursor: pointer;
+      opacity: 0.8;
+      /* position: fixed; */
+      bottom: 23px;
+      left: 200px;
+      height:40px;
+      width: 350px;
+       
+    }
+
+  
+
+  
+  #btab{
+      margin-top:90px;
+      display:flex;
+      margin:1px solid;
+      
+    
+       
+  
+  }
+  #btab>div{
+    margin:1px solid;
+      flex-basis:150px;
+      
+  }
+  
+  #sldiv{
+    margin:1px solid;
+      display:flex;
+      justify-content: space-between;
+      margin-top:60px;
+       
+      font-size: 10px;
+  }
+  #sldiv>div{
+      color: black; 
+  }
+  
+  #ldiv{
+   height:80px;
+   width:140px;
+   margin:1px solid;
+  }
+  #ldiv>p{
+      margin-top:90px;
+      font-size:10px;  
+      margin:1px solid;
+  }
+  #btab>div>h3{
+      font-size:15px;
+  }
+  #btab>div>a p{
+      font-size:10px;
+      color:black;
+      margin:1px solid;
+  }
+  
+  #bucket{
+      padding-left:40px;
+      padding-bottom:60px;
+      margin-right:10px;
+      margin:1px solid;
+  }
+  #pd> h3{
+      margin-top:60px;
+      margin-bottom:0px;
+      margin:1px solid;
+  }
+
+  .infrm {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid black;
+    outline: 0;
+    font-size:10px;
+    color:black;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color red;
+  }
+
+
+
+
+
+
+
+
+
+
+  @media all and (min-width: 381px) and (max-width: 700px){
+    #container{
+      
+      margin-right:30px;
+      width:900px;
+      display:flex;
+      justify-content:space-evenly;
+      
+    }
+    #bucket{
+      
+      margin-left:20px;
+    }
+   
+  
+    #sup1{
+      display:grid;
+      grid-template-columns: repeat(1,1fr);
+      
+      gap:10px;
+      
+      margin-top: 10px;
+    }
+    #sup1>input{
+      
+        margin-top:20px;
+        width:190px;
+        margin-right: 20px;
+    }
+  
+    #supopt{
+        margin-top:20px;
+        margin:1px solid;
+    }
+    #supopt>label>h6{
+        font-size:11px;
+        margin:1px solid;
+    }
+   
+    
+    
+    * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: Poppins;
+      }
+      
+      
+      #supopt{
+          display: flex;
+      }
+      #button1 {
+        margin-top:40px;
+        margin-bottom:100px;
+        background-color: black;
+        color: white;
+        /* padding:16px 20px; */
+        border: none;
+        cursor: pointer;
+        opacity: 0.8;
+        /* position: fixed; */
+        bottom: 23px;
+        left: 200px;
+        height:40px;
+        width: 250px;
+        
+      }
+  
+    
+  
+    
+    #btab{
+        margin-top:90px;
+        display:flex;
+        margin:1px solid;
+         
+    
+    }
+    #btab>div{
+      margin:1px solid;
+        flex-basis:150px;
+        
+    }
+    
+    #sldiv{
+      margin:1px solid;
+        display:flex;
+        justify-content: space-between;
+        margin-top:60px;
+         
+        font-size: 10px;
+    }
+    #sldiv>div{
+        color: black; 
+    }
+    
+    #ldiv{
+     height:80px;
+     width:140px;
+     margin:1px solid;
+    }
+    #ldiv>p{
+        margin-top:90px;
+        font-size:10px;  
+        margin:1px solid;
+    }
+    #btab>div>h3{
+        font-size:15px;
+    }
+    #btab>div>a p{
+        font-size:10px;
+        color:black;
+        margin:1px solid;
+    }
+    
+    #bucket{
+        padding-left:40px;
+        padding-bottom:60px;
+        margin-right:10px;
+        margin:1px solid;
+    }
+    #pd> h3{
+        margin-top:60px;
+        margin-bottom:0px;
+        margin:1px solid;
+    }
+  
+
+  }
+  
+
+  @media all and (min-width: 50px) and (max-width: 380px){
+    #container{
+      
+      margin-right:30px;
+      width:900px;
+      display:flex;
+      justify-content:space-evenly;
+      
+    }
+    #bucket{
+      
+      margin-left:20px;
+    }
+   
+  
+    #sup1{
+      display:grid;
+      grid-template-columns: repeat(2,1fr);
+      
+      gap:10px;
+      
+      margin-top: 10px;
+    }
+    #sup1>input{
+      
+        margin-top:20px;
+        width:190px;
+        margin-right: 20px;
+    }
+  
+    #supopt{
+        margin-top:20px;
+        margin:1px solid;
+    }
+    #supopt>label>h6{
+        font-size:11px;
+        margin:1px solid;
+    }
+   
+    
+    
+    * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: Poppins;
+      }
+      
+      
+      #supopt{
+          display: flex;
+      }
+      #button1 {
+        margin-top:40px;
+        margin-bottom:100px;
+        background-color: black;
+        color: white;
+        /* padding:16px 20px; */
+        border: none;
+        cursor: pointer;
+        opacity: 0.8;
+        /* position: fixed; */
+        bottom: 23px;
+        left: 200px;
+        height:30px;
+        width: 200px;
+        
+      }
+  
+    
+  
+    
+    #btab{
+        margin-top:90px;
+        display:flex;
+        margin:1px solid;
+         
+    
+    }
+    #btab>div{
+      margin:1px solid;
+        flex-basis:150px;
+        
+    }
+    
+    #sldiv{
+      margin:1px solid;
+        display:flex;
+        justify-content: space-between;
+        margin-top:60px;
+         
+        font-size: 10px;
+    }
+    #sldiv>div{
+        color: black; 
+    }
+    
+    #ldiv{
+     height:80px;
+     width:140px;
+     margin:1px solid;
+    }
+    #ldiv>p{
+        margin-top:90px;
+        font-size:10px;  
+        margin:1px solid;
+    }
+    #btab>div>h3{
+        font-size:15px;
+    }
+    #btab>div>a p{
+        font-size:10px;
+        color:black;
+        margin:1px solid;
+    }
+    
+    #bucket{
+        padding-left:40px;
+        padding-bottom:60px;
+        margin-right:10px;
+        margin:1px solid;
+    }
+    #pd> h3{
+        margin-top:60px;
+        margin-bottom:0px;
+        margin:1px solid;
+    }
+  
+  }
+

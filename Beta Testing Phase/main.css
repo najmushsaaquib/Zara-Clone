@@ -1,0 +1,39 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+/* #first{
+
+  display: flex;
+  width: 100%;
+  height: 600px;
+  border: 2px solid tomato;
+  background-color: blue;
+
+
+} */
+
+#slider-box{
+
+  width: 90%;
+  height: 90vh;
+  position: relative;
+  margin:  10px auto;
+  background: rgb(167, 160, 160);
+  /* overflow: hidden; */
+  
+}
+
+#slider{
+
+  width:90%;
+  display: flex
+
+}
+
+#slider img, #slider video{
+  width: 100%;
+  height: 75vh;
+}

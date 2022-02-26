@@ -1,0 +1,585 @@
+#container{
+  
+    padding-left: 30px;
+    padding-bottom: 30px;
+    
+}
+
+#heading{
+    margin-top:160px;
+    margin-bottom:100px;
+   
+}
+
+#Storepick{
+    
+    display:flex;
+    grid-template-columns: repeat(2,1fr);
+}
+#Storepick>div{
+color:black;
+
+}
+#Storepick>div>h2{
+    margin-top:2px;
+    margin-bottom:3px;
+    
+    font-size: 11px;
+}
+#Storepick>div>p{
+    margin-top:2px;
+    margin-bottom:3px;
+    font-size: 10px;
+}
+
+#HomeDelivery{
+    
+    display:flex;
+    grid-template-columns: repeat(2,1fr);
+}
+#HomeDelivery>div{
+     
+    height:100%;
+}
+#HomeDelivery>div>h2{
+    margin-top:2px;
+    margin-bottom:4px;
+    
+    font-size: 11px;
+}
+#HomeDelivery>div>p{
+    margin-top:2px;
+    margin-bottom:4px;
+    font-size: 10px;
+}
+#btab{
+    margin-top:90px;
+    display:flex;
+     
+
+}
+#btab>div{
+     
+    flex-basis:150px;
+    
+}
+
+#sldiv{
+    display:flex;
+    justify-content: space-between;
+    margin-top:60px;
+     
+    font-size: 10px;
+}
+#sldiv>div{
+    color: black; 
+}
+
+#ldiv{
+ height:80px;
+ width:140px;
+}
+#ldiv>p{
+    margin-top:90px;
+    font-size:10px;  
+}
+#btab>div>h3{
+    font-size:15px;
+}
+#btab>div>a p{
+    font-size:10px;
+}
+#total{
+    color: white;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    width: 200px;
+    height: 20px;
+}
+#total>p{
+    color: black;
+}
+#continueButton{
+  height: 100%;
+  width: 20%;
+}
+
+  #continueButton>button {
+    background-color: black;
+    color: white;
+    /* padding:16px 20px; */
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    height:40px;
+    width: 190px;
+    margin-left: 20px;
+  }
+  
+  
+  .chat-popup {
+      
+    display: none;
+    position: fixed;
+    bottom: 83px;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  
+  .form-container {
+    max-width: 300px;
+    padding: 20px;
+    background-color: white;
+  }
+  
+ 
+  .form-container textarea {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 20px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 100px;
+  }
+  
+  
+  .form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+ 
+  .form-container .btn {
+    background-color: black;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+  .form-container .btn:hover, .open-button2:hover {
+    opacity: 1;
+  }
+
+      #buttomDiv{
+        width: 100%;
+  height: 70px;
+  background-color: white;
+  padding-top: 12px;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  align-items: center;
+      }
+
+/* -----------Media query-------- */
+
+
+  @media all and (min-width: 416px) and (max-width: 700px) {
+    #container{
+      padding-left: 30px;
+      padding-bottom: 30px;
+  }
+  
+  #heading{
+      margin-top:160px;
+      margin-bottom:100px;
+     
+  }
+  
+  #Storepick{
+      
+      display:flex;
+      grid-template-columns: repeat(2,1fr);
+  }
+  #Storepick>div{
+  color:black;
+  
+  }
+  #Storepick>div>h2{
+      margin-top:2px;
+      margin-bottom:3px;
+      
+      font-size: 11px;
+  }
+  #Storepick>div>p{
+      margin-top:2px;
+      margin-bottom:3px;
+      font-size: 8px;
+  }
+  
+  #HomeDelivery{
+      
+      display:flex;
+      grid-template-columns: repeat(2,1fr);
+  }
+  #HomeDelivery>div{
+       
+      height:100%;
+  }
+  #HomeDelivery>div>h2{
+      margin-top:2px;
+      margin-bottom:4px;
+      
+      font-size: 9px;
+  }
+  #HomeDelivery>div>p{
+      margin-top:2px;
+      margin-bottom:4px;
+      font-size: 7px;
+  }
+  #btab{
+      margin-top:90px;
+      display:flex;
+       
+  
+  }
+  #btab>div{
+       
+      flex-basis:150px;
+      
+  }
+  
+  #sldiv{
+      display:flex;
+      justify-content: space-between;
+      margin-top:60px;
+       
+      font-size: 10px;
+  }
+  #sldiv>div{
+      color: black; 
+  }
+  
+  #ldiv{
+   height:80px;
+   width:140px;
+  }
+  #ldiv>p{
+      margin-top:90px;
+      font-size:7px;  
+  }
+  #btab>div>h3{
+      font-size:11px;
+  }
+  #btab>div>a p{
+      font-size:7px;
+  }
+  #total{
+      color: white;
+      border: none;
+      cursor: pointer;
+      opacity: 0.8;
+      width: 200px;
+    height: 20px;
+  }
+  #total>p{
+      color: black;
+  }
+
+  
+    #continueButton>button{
+      background-color: black;
+      color: white;
+      /* padding:16px 20px; */
+      border: none;
+      cursor: pointer;
+      opacity: 0.8;
+      height:40px;
+    width: 190px;
+      
+    }
+  #buttomDiv{
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  padding-top: 12px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  align-items: center;
+      }
+    
+    .chat-popup {
+        
+      display: none;
+      position: fixed;
+      bottom: 83px;
+      right: 15px;
+      border: 3px solid #f1f1f1;
+      z-index: 9;
+    }
+    
+    
+    .form-container {
+      max-width: 300px;
+      padding: 20px;
+      background-color: white;
+    }
+    
+   
+    .form-container textarea {
+      width: 90%;
+      padding: 15px;
+      margin: 5px 0 20px 0;
+      border: none;
+      background: #f1f1f1;
+      resize: none;
+      min-height: 100px;
+    }
+    
+    
+    .form-container textarea:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+    
+   
+    .form-container .btn {
+      background-color: black;
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom:10px;
+      opacity: 0.8;
+    }
+    
+    
+    .form-container .cancel {
+      background-color: red;
+    }
+    
+    
+    .form-container .btn:hover, .open-button:hover {
+      opacity: 1;
+    }
+  
+    .form-container .btn:hover, .open-button2:hover {
+      opacity: 1;
+    }
+  
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* small */
+  @media all and (min-width: 50px) and (max-width: 415px) {
+   
+
+    #container{
+      padding-left: 30px;
+      padding-bottom: 30px;
+      
+  }
+  
+  #heading{
+      margin-top:160px;
+      margin-bottom:100px;
+      
+     
+  }
+  
+  #Storepick{
+      
+      display:flex;
+      grid-template-columns: repeat(2,1fr);
+  }
+  #Storepick>div{
+  color:black;
+  
+  }
+  #Storepick>div>h2{
+      margin-top:2px;
+      margin-bottom:3px;
+      
+      font-size: 11px;
+  }
+  #Storepick>div>p{
+      margin-top:2px;
+      margin-bottom:3px;
+      font-size: 6px;
+  }
+  
+  #HomeDelivery{
+      
+      display:flex;
+      grid-template-columns: repeat(2,1fr);
+  }
+  #HomeDelivery>div{
+       
+      height:100%;
+  }
+  #HomeDelivery>div>h2{
+      margin-top:2px;
+      margin-bottom:4px;
+      
+      font-size: 7px;
+  }
+  #HomeDelivery>div>p{
+      margin-top:2px;
+      margin-bottom:4px;
+      font-size: 6px;
+  }
+  #btab{
+      margin-top:90px;
+      display:flex;
+       
+  
+  }
+  #btab>div{
+       
+      flex-basis:150px;
+      
+  }
+  
+  #sldiv{
+      display:flex;
+      justify-content: space-between;
+      margin-top:60px;
+       
+      font-size: 6px;
+  }
+  #sldiv>div{
+      color: black; 
+  }
+  
+  #ldiv{
+   height:60px;
+   width:140px;
+  }
+  #ldiv>p{
+      margin-top:90px;
+      font-size:6px;  
+  }
+  #btab>div>h3{
+      font-size:10px;
+  }
+  #btab>div>a p{
+      font-size:6px;
+  }
+  #total{
+      
+      
+      color: white;
+      border: none;
+      cursor: pointer;
+      opacity: 0.8;
+      width: 200px;
+    height: 20px;
+  
+  }
+  #total>p{
+      color: black;
+  }
+    #continueButton>button {
+      background-color: black;
+      color: white;
+      /* padding:16px 20px; */
+      border: none;
+      cursor: pointer;
+      opacity: 0.8;
+      height:40px;
+      width: 100px;
+      
+    }
+  #buttomDiv{
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  padding-top: 12px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  align-items: center;
+      }
+    
+    .chat-popup {
+        
+      display: none;
+      position: fixed;
+      bottom: 83px;
+      right: 15px;
+      border: 3px solid #f1f1f1;
+      z-index: 9;
+    }
+    
+    
+    .form-container {
+      max-width: 300px;
+      padding: 20px;
+      background-color: white;
+    }
+    
+   
+    .form-container textarea {
+      width: 90%;
+      padding: 15px;
+      margin: 5px 0 20px 0;
+      border: none;
+      background: #f1f1f1;
+      resize: none;
+      min-height: 100px;
+    }
+    
+    
+    .form-container textarea:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+    
+   
+    .form-container .btn {
+      background-color: black;
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom:10px;
+      opacity: 0.8;
+    }
+    
+    
+  
+    }
+

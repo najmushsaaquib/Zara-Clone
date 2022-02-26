@@ -1,0 +1,320 @@
+*{
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+
+/* login popup starts here  */
+*,
+*:before,
+*:after{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+.popup{
+background-color: #ffffff;
+width: 420px;
+padding: 30px 40px;
+position: absolute;
+transform: translate(-50%,-50%);
+left: 50%;
+top: 50%;
+border-radius: 15px;
+font-family: "Poppins",sans-serif;
+display: none; 
+text-align: center;
+}
+#close{
+display: block;
+margin:  0 0 30px auto;
+background-color: transparent;
+font-size: 30px;
+color: #ffffff;
+background: royalblue;
+border-radius: 100%;
+width: 40px;
+height: 40px;
+border: none;
+outline: none;
+cursor: pointer;
+}
+.popup>h2{
+margin-top: -20px;
+}
+.popup>p{
+font-size: 14px;
+text-align: center;
+margin: 20px 0;
+line-height: 25px;
+}
+#popupLogin{
+display: block;
+width: 150px;
+position: relative;
+margin: 10px auto;
+text-align: center;
+background-color: #0f72e5;
+border-radius: 20px;
+color: #ffffff;
+text-decoration: none;
+padding: 8px 0;
+}
+/* popup ends here */
+
+#firstImage{
+width: 90%;
+margin: auto;
+display: flex;
+justify-content: center;
+}
+
+#firstImage>img{
+margin-top: 160px;
+width: 60%;
+height: 900px;
+margin-bottom: 100px;
+}
+
+#container{
+display: grid;
+width: 90%;
+margin: auto;
+grid-template-areas:
+". a a a a ."
+". b c d e ."
+". f f f f ."
+". g h i j ."
+". k l m n ."
+". o o o o ."
+". p q r s ."
+". t t u u ."
+". v v w w ."
+". x . . y ."
+". z z zz zz ."
+". a1 a1 a1 a1 ."
+". b1 c1 d1 e1 ."
+". f1 f1 f1 f1 ."
+". g1 h1 i1 j1 ."
+". k1 l1 m1 n1 ."
+". o1 o1 o1 o1 ."
+". p1 q1 r1 s1 ."
+". t1 t1 u1 u1 ."
+". v1 v1 w1 w1 ."
+". x1 . . y1 ."
+". z1 z1 zz1 zz1 ."
+". A A A A ."
+". B C D E ."
+". F F F F ."
+". G H I J ."
+". K L M N ."
+". O O O O ."
+". P Q R S ."
+". T T U U ."
+". V V W W ."
+". X . . Y ."
+". Z Z a2 a2 ."
+". b2 b2 b2 b2 ."
+". c2 d2 d2 e2 .";
+justify-content: space-evenly;
+align-content: space-evenly;
+}
+#container>div{
+width: 90%;
+margin: auto;
+height: 90%;
+font-family: sans-serif
+}
+#container>div>img{
+width: 100%;
+height: 90%;
+cursor: pointer;
+}
+#filter{
+display: flex;
+width: auto;
+justify-content: space-around;
+position: sticky;
+top: 90px;
+right: 0px;
+align-items: center;
+}
+#filter>input {
+-webkit-appearance: none;
+width: 50%;
+height: 1px;
+border-radius: 5px;
+background: #000000;
+}
+
+#filter>input::-webkit-slider-thumb {
+-webkit-appearance: none;
+width: 8px;
+height: 8px;
+border-radius: 50%;
+background: black;
+}
+#text{
+width: 50%;
+margin: auto;
+}
+#text>p{
+font-size: 12px;
+color: rgb(94, 92, 92);
+line-height: 18px;
+margin-top: 10px;
+margin-bottom: 50px;
+}
+#type{
+display: flex;
+width: 30%;
+justify-content: space-between;
+position: sticky;
+top: 140px;
+left: 35%;
+cursor: pointer;
+}
+#type>p{
+font-size: 12px;
+}
+
+@media all and (min-width:416px) and (max-width:700px) {
+    #firstImage{
+width: 100%;}
+
+#firstImage>img{
+width: 90%;
+margin-top: 250px;}
+
+#container{
+grid-template-areas:
+"a b c"
+"d e f"
+"g g g"
+"h i j"
+"k l m"
+"n o p"
+"q q q"
+"r s t"
+"u . v"
+". w ."
+"x y z"
+"zz zz zz"
+"a1 b1 c1"
+"d1 e1 f1"
+"g1 g1 g1"
+"h1 i1 j1"
+"k1 l1 m1"
+"n1 o1 p1"
+"q1 q1 q1"
+"r1 s1 t1"
+"u1 . v1"
+". w1 ."
+"x1 y1 z1"
+"zz1 zz1 zz1"
+"A B C"
+"D D E"
+"F G G"
+"H H H"
+"I J K"
+"L M N"
+"O O O"
+"P . Q"
+". R ."
+"S T U"
+"V W X"
+"Y Z a2"
+"b2 b2 b2"
+"c2 d2 e2";
+}
+#text{
+width: 80%;}
+
+#type{
+    width: 70%;
+    left: 15%;
+}}
+
+@media all and (min-width:551px) and (max-width:1100px) {
+    #firstImage{
+width: 90%;}
+
+#firstImage>img{
+width: 90%;
+margin-top: 250px;}
+
+#text{
+width: 80%;}
+
+#type{
+    width: 50%;
+    left: 25%;
+}}
+
+@media all and (min-width:0px) and (max-width:415px) {
+#firstImage{
+width: 100%;}
+
+#firstImage>img{
+width: 95%;
+margin-top: 250px;}
+
+#container{
+grid-template-areas: 
+"a b"
+"c d"
+"e f"
+"g h"
+"i i"
+"j k"
+"l m"
+"n n"
+"o p"
+"q r"
+"s t"
+"u v"
+"w x"
+"y z"
+"zz zz"
+"a1 b1"
+"c1 d1"
+"e1 f1"
+"g1 h1"
+"i1 i1"
+"j1 k1"
+"l1 m1"
+"n1 n1"
+"o1 p1"
+"q1 r1"
+"s1 t1"
+"u1 v1"
+"w1 x1"
+"y1 z1"
+"zz1 zz1"
+"A A"
+"B C"
+"D E"
+"F G"
+"H H"
+"I J"
+"K L"
+"M N"
+"O O"
+"P Q"
+"R S"
+"T U"
+"V V"
+"W X"
+"Y Z"
+"a2 a2"
+"b2 c2"
+"d2 e2";}
+
+#text{
+width: 80%;}
+
+#type{
+    width: 90%;
+    left: 0%;
+}}
