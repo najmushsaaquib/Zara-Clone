@@ -120,7 +120,12 @@ function continu()
 {
     var loginData = JSON.parse(localStorage.getItem("loginData")) || []
     if (loginData.length != 0) {
-        window.location.href = "/Pages/address&payment.html"
+        if (cartData.length != 0) {
+            window.location.href = "/Pages/address&payment.html"
+        }
+        else {
+            alert("Please add items to cart to continue...")
+        }
     }
     else {
         alert("Login to continue")
