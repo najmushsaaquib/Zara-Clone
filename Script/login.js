@@ -48,6 +48,7 @@ var flag=false;
             window.location.href="/index.html"
         }
         else{
-            alert("wrong details")
+            alert("Details not found")
+            
         }
     }

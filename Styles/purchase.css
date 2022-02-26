@@ -180,24 +180,18 @@
 
   
    
-    @media all and (max-width:410px){
+    @media all and (max-width:415px){
       #main{
-        /* border: 2px solid red; */
-        /* height: 400px; */
-        /* width: 1000px; */
+        
         display: grid;
         grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(3,1fr);
         width: 410px;
         height: 700px;
         /* gap: 80px; */
         /* margin: auto; */
         margin-top: 20px;
-        /* margin-bottom: 250px; */
-        grid-area: "."
-                    "r"
-                    "m"
-    }
+        
+    } 
    
       .footer { 
           display : none; 
@@ -213,7 +207,18 @@
         visibility : hidden;
       }
       #right{
-        margin-left: 20px;
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+      #mid{
+        
+        margin: auto;
+        text-align: center;
+      }
+      #mid>img{
+        width: 80%;
+        margin: auto;
+        
       }
     #left{
       display: none;
