@@ -20,12 +20,12 @@ function continueForm(){
     
       
   if (loginData.length != 0) {
-          if(cvv==="999")
+    if (cvv.length == 3 && card2.length== 12 && date!= "" && cholder!="")
       {
         window.location.href="otp.html";
       }
           else {
-            alert("Wrong credentials")
+            alert("Wrong credentials, please ensure you give 3 digit cvv number & 12 digit card number")
       }
       }
   else {
