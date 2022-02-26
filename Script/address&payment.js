@@ -18,11 +18,11 @@ totalDiv.innerText = "TOTAL BILL : ₹"+arr
 function continueForm(){
 //    var optn1 = document.querySelector("#1sto").value;
 //    var optn2 = document.querySelector("#2ndo").value;
-var chose = document.querySelector("#chose").value;
+var chose = document.querySelector("#textAddress").value;
 // if(value=="one"){
     var loginData = JSON.parse(localStorage.getItem("loginData")) || []
     if (loginData.length != 0) {
-        if (chose === undefined) {
+        if (chose == "") {
             alert("Delivery details not filled")
         }
         else {
