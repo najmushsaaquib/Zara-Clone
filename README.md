@@ -31,7 +31,7 @@ We have tried our best to make a fully-functional clone of Zara website that pro
    </p>
  
  Click the link to view project: 
- <a href="https://tryme-zara-initial.netlify.app/">Zara</a>
+ <a href="https://tryme-zara-clone.netlify.app/">Zara</a>
   
 ## Lessons Learned
 
