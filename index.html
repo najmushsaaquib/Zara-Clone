@@ -17,100 +17,14 @@
     />
     <link rel="shortcut icon" href="/Logos/zara-logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="Styles/index.css" />
-    
+
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <title>Zara India</title>
   </head>
   <body>
-     <!-- ! Main Nav Bar starts form here -->
-     <div id="navbar">
-        <!-- ! Left side of the nav bar -->
-        <div id="navbar__left">
-          <div id="hamdiv">
-            <div id="mySidenav" class="sidenav">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-                >&times;</a
-              >
-              <a href="/Pages/viewAll.html" class="sideNavHeading">View All</a>
-              <a href="/Pages/women.html" class="sideNavHeading">Women</a>
-  
-              <a href="">
-                <ul>
-                  <li>Top</li>
-                  <li>Jeans</li>
-                  <li>Skirt</li>
-                  <li>Bags</li>
-                  <li>Shoes</li>
-                </ul>
-              </a>
-  
-              <a href="/Pages/men.html" class="sideNavHeading">Man</a>
-  
-              <a href="">
-                <ul>
-                  <li>Shirt</li>
-                  <li>Blazer</li>
-                  <li>Pant</li>
-                  <li>Shoes</li>
-                  <li>Perfumes</li>
-                </ul>
-              </a>
-  
-              <a href="/Pages/kids.html" class="sideNavHeading">Kids</a>
-  
-              <a href="">
-                <ul>
-                  <li>Top</li>
-                  <li>Jeans</li>
-                  <li>Trousers</li>
-                  <li>Shoes</li>
-                </ul>
-              </a>
-            </div>
-            <span
-              class="ham"
-              style="font-size: 20px; cursor: pointer"
-              onclick="openNav()"
-              >&#9776;</span
-            >
-          </div>
-  
-          <div id="logodiv">
-            <img src="/Logos/zara-logo.png" alt="zara-logo" id="logoimg" />
-          </div>
-        </div>
-  
-        <!--  ! Right side of the nav bar -->
-  
-        <div id="navbar__right">
-          <div id="login_div">
-            <pre>  <a href="/Pages/login.html" id="login" ></a> </pre>
-          </div>
-          <div id="help_div">
-            <!-- Trigger/Open The Modal -->
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
-              <!-- Modal content -->
-              <div class="modal-content">
-                <span class="close">&times;</span>
-                <pre>Reach us on : helpdesk@zara.com</pre>
-                <pre>Or Give a call on +1 11-4444-2620</pre>
-              </div>
-            </div>
-  
-            <pre id="myBtn">Help</pre>
-          </div>
-  
-          <div id="cart_div">
-            <a href="/Pages/cart.html">
-              <img src="/Logos/cart.svg" alt="cart logo" id="cart_logo" />
-            </a>
-          </div>
-        </div>
-      </div>
-      <!--  ! End of the nav bar -->
-  
-
+    <!-- ! Main Nav Bar starts form here -->
+   
+    <div id="navBar"></div>
     <!-- ! Vertical Slides Data Starts Here   -->
 
     <div class="swiper-container">
@@ -118,27 +32,37 @@
         <div class="swiper-slide">
           <!-- ! Horizontal Slides Data Starts Here   -->
 
+          <div class="static">
+              
+          </div>
+
           <div class="container">
             <div class="swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img
-                    src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-new/subhome-xmedia-08-2//w/771/IMAGE-large-landscape-df408c98-18e7-463d-b682-6ce00be7e3fa-default_0.jpg?ts=1645708781229"
-                    alt=""
-                    class="menimg"
-                  />
+                  <div class="horizontal-img1">
+                    <img
+                      src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-woman-new/subhome-xmedia-08-2//w/771/IMAGE-large-landscape-df408c98-18e7-463d-b682-6ce00be7e3fa-default_0.jpg?ts=1645708781229"
+                      alt=""
+                      class="menimg"
+                    />
+                  </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <img
-                    src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-man-new/subhome-xmedia-08-2//w/771/IMAGE-large-landscape-6e9566d1-6b1e-48c2-bd15-ba18d3999615-default_0.jpg?ts=1645618888524"
-                    alt=""
-                    class="menimg"
-                  />
+                  <div class="horizontal-img2">
+                    <img
+                      src="https://static.zara.net/photos///contents/mkt/spots/ss22-north-man-new/subhome-xmedia-08-2//w/771/IMAGE-large-landscape-6e9566d1-6b1e-48c2-bd15-ba18d3999615-default_0.jpg?ts=1645618888524"
+                      alt=""
+                      class="menimg"
+                    />
+                  </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <video src="/Videos/Kids.mp4" autoplay loop muted></video>
+                  <div class="horizontal-video">
+                    <video src="/Videos/Kids.mp4" autoplay loop muted></video>
+                  </div>
                 </div>
               </div>
             </div>
@@ -274,17 +198,10 @@
             </div>
           </div>
         </div>
-
-        <div class="swiper-pagination"></div>
       </div>
-      <div class="swiper-pagination"></div>
     </div>
 
     <!-- ! Horizontal Slides Data Ends Here   -->
-
-
-
-    
 
     <script>
       $(function () {

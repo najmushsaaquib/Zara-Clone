@@ -30,7 +30,12 @@ function all() {
         proDiv1.setAttribute("id", "proDiv1")
 
         var para3 = document.createElement("p")
-        para3.innerText = "EU" + " " + elem.size
+        if (elem.size != undefined) {
+            para3.innerText = ("EU " + elem.size)
+        }
+        else {
+            para3.innerText = ""
+        }
 
 
         var proDiv2 = document.createElement("div")
@@ -38,7 +43,7 @@ function all() {
         proDiv2.innerText = "Rs" + " " + elem.price
 
         var quant = document.createElement("div")
-        quant.innerHTML = "Quantity : " 
+        quant.innerHTML = "Qty : " +elem.count
 
         var proDiv3 = document.createElement("div")
         proDiv3.setAttribute("id", "proDiv3")
@@ -46,17 +51,15 @@ function all() {
         var add = document.createElement("div")
         add.style.cursor = "pointer"
         add.setAttribute("id", "add")
-        add.innerText = "ADD MORE"
+        add.innerText = "+"
+        var decrease = document.createElement("div")
+        decrease.style.cursor = "pointer"
+        decrease.setAttribute("id", "less")
+        decrease.innerText = "-"
 
         var dele = document.createElement("div")
         dele.setAttribute("id", "dele")
         dele.innerText = "Delete"
-
-
-        total = total + elem.price
-
-        document.querySelector("#prize").innerHTML = "Total price" + " ₹ " + total
-        localStorage.setItem("totalPrice",JSON.stringify(total))
 
         add.addEventListener("click", function () {
             addMore(elem)
@@ -64,9 +67,19 @@ function all() {
         dele.addEventListener("click", function () {
             delet(index)
         })
+        decrease.addEventListener("click", function () {
+            decreaseFun(elem,index)
+        })
+
+        var total = cartData.reduce(function (acc, elem) {
+        return (acc+(elem.price*elem.count))
+        }, 0)
+        document.querySelector("#prize").innerHTML = "Total price: ₹" + total
+        localStorage.setItem("totalPrice",JSON.stringify(total))
+
 
         proDiv1.append(para3, quant)
-        proDiv3.append(add, dele)
+        proDiv3.append(add, decrease, dele)
         div11.append(nameDiv, image)
         div12.append(proDiv1, proDiv2, proDiv3)
         div1.append(div11, div12)
@@ -75,7 +88,7 @@ function all() {
     })
     if (cartData.length == 0)
     {
-        document.querySelector("#prize").innerHTML = "Total" + " " + "price" + " " + "=" + "Rs." + total
+        document.querySelector("#prize").innerHTML = "Total price: ₹0"
     }
 }
 function delet(index)
@@ -86,9 +99,20 @@ function delet(index)
 }
 function addMore(elem)
 {
-   cartData.push(elem)
-   localStorage.setItem("cartData",JSON.stringify(cartData))
-   all();
+    elem.count++
+    localStorage.setItem("cartData",JSON.stringify(cartData))
+    all();
+}
+function decreaseFun(elem,index)
+{
+    elem.count--
+    if (elem.count > 0) {
+        localStorage.setItem("cartData", JSON.stringify(cartData))
+        all();
+    }
+    else {
+        delet(index)
+    }
 }
 
 document.querySelector("#continue").addEventListener("click",continu)

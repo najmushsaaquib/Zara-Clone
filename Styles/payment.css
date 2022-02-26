@@ -127,7 +127,7 @@ opacity: 1;
   /* -----------Media query-------- */
 
 
-  @media all and (min-width: 381px) and (max-width: 700px) {
+  @media all and (min-width: 416px) and (max-width: 700px) {
    
     #container{
       margin-top:120px;
@@ -224,6 +224,7 @@ opacity: 1;
     position: fixed;
     bottom: 23px;
     right: 30px;
+    top:560px;
     height:30px;
     width: 140px;
   }
@@ -252,7 +253,7 @@ opacity: 1;
 
 
   /* small */
-  @media all and (min-width: 50px) and (max-width: 380px) {
+  @media all and (min-width: 5px) and (max-width: 415px) {
    
     #container{
       margin-top:120px;
@@ -340,15 +341,12 @@ opacity: 1;
   .open-button2 {
     background-color: black;
     color: white;
-    /* padding:16px 20px; */
-    border: none;
     cursor: pointer;
     opacity: 0.8;
-    position: fixed;
-    bottom: 23px;
-    right: 20px;
-    height:20px;
-    width: 100px;
+    position: sticky;
+    bottom: 40%;
+    height:50px;
+    width: 150px;
   }
   .form-container .btn:hover, .open-button2:hover {
   opacity: 1;

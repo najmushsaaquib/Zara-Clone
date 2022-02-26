@@ -33,3 +33,4 @@ function continueForm(){
         window.location.href = "/Pages/login.html"
       }
 }
+  localStorage.removeItem("purchaseData")

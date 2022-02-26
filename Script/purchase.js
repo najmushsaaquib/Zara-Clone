@@ -100,11 +100,25 @@ cartData= JSON.parse(localStorage.getItem("cartData")) || []
 // }
 // display();
 function takeMeToCart() {
+    flag= false
     var loginData = JSON.parse(localStorage.getItem("loginData")) || []
     if (loginData.length != 0) {
-        cartData.push(purchesData)
-        localStorage.setItem("cartData", JSON.stringify(cartData));
-        window.location.href = "/Pages/cart.html"
+            for (var i = 0; i < cartData.length; i++)
+            {
+                if (purchesData.class == cartData[i].class)
+                {
+                    cartData[i].count++
+                    localStorage.setItem("cartData", JSON.stringify(cartData));
+                    window.location.href = "/Pages/cart.html"
+                    flag= true
+                }
+            }
+        if (flag == false)
+        {
+            cartData.push(purchesData)
+            localStorage.setItem("cartData", JSON.stringify(cartData));
+            window.location.href = "/Pages/cart.html"
+            }
     }
     else {
         alert("Login to continue")

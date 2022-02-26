@@ -179,7 +179,7 @@ ul {
                 border: none;
                 border-bottom: 2px solid rgb(22, 20, 20);
               }
-              #password:focus{
+              #pass:focus{
                     outline: none;
               }
               #email:focus{
@@ -269,6 +269,9 @@ ul {
           #login {cursor: pointer;}
           #createaccount{cursor: pointer;}
 
+          alert{
+              background-color: wheat;
+          }
 
 
           /* footer start here */
@@ -366,11 +369,18 @@ ul {
 }
 
 
-@media all and (max-width:410px){
+@media all and (max-width:415px){
 
+  #main{
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: 212px;
+    margin: 100px 0px 0px 60px;
+    margin-bottom: 100px;
+  }
   #right{
-    display: none;
-        visibility : hidden;
+    justify-content: left;
+    margin-left: 0px;
   }
   
   .footer { 

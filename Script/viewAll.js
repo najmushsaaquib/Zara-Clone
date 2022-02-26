@@ -1,3 +1,4 @@
+localStorage.removeItem("purchaseData")
 var data = JSON.parse(localStorage.getItem("data")) || []
 // first function which map all elements into the first basic page: this function is called as "visible"
 // Due to limited data we are using grid method to show them in a representable way.
@@ -39,8 +40,9 @@ function purchase(elem)
 {
     var loginData = JSON.parse(localStorage.getItem("loginData")) || []
     if (loginData.length != 0) {
-        window.location.href = "/pages/purchase.html"
+        elem["count"] = 1
         localStorage.setItem("purchaseData", JSON.stringify(elem))
+        window.location.href = "/pages/purchase.html"
     }
     else {
         alert("Login to continue")

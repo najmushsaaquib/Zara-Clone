@@ -1,5 +1,5 @@
 var womenData = JSON.parse(localStorage.getItem("womenData")) || []
-
+  localStorage.removeItem("purchaseData")
 // first function which map all elements into the first basic page: this function is called as "visible"
 // Due to limited data we are using grid method to show them in a representable way.
 visible()
@@ -39,6 +39,7 @@ function purchase(elem)
 {
     var loginData = JSON.parse(localStorage.getItem("loginData")) || []
     if (loginData.length != 0) {
+        elem["count"] = 1
         window.location.href = "/pages/purchase.html"
         localStorage.setItem("purchaseData", JSON.stringify(elem))
     }
@@ -440,3 +441,4 @@ document.querySelector("#veryHighPrice").addEventListener("click", function () {
     localStorage.setItem("filterprice", JSON.stringify(filterValue))
     filterByPrice()
 })
+

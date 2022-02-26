@@ -129,6 +129,7 @@ font-family: sans-serif
 #container>div>img{
 width: 100%;
 height: 90%;
+cursor: pointer;
 }
 #filter{
 display: flex;

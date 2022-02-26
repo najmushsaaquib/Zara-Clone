@@ -22,7 +22,8 @@ var flag=false;
             if(signupData[i].email==email && signupData[i].pass==password)
             {
                 flag = true;
-                var name= signupData[i].input
+                var name = signupData[i].input
+                var phone= signupData[i].number
                 break;
             }
             else
@@ -36,7 +37,8 @@ var flag=false;
             obj = {
                 name: name,
                 email:document.querySelector("#email").value,
-                pass:document.querySelector("#pass").value,
+                pass: document.querySelector("#pass").value,
+                phone: phone,
             }
             loginCredentials.push(obj)
             localStorage.setItem("loginData", JSON.stringify(loginCredentials))
