@@ -18,14 +18,16 @@ function takeMe() {
 }
 
 
+// login.innerText = JSON.parse(localStorage.getItem("loginData")) || "Login"
+showName()
+function showName() {
 let loginData = JSON.parse(localStorage.getItem("loginData")) || [];
 var login = document.querySelector("#login");
-// login.innerText = JSON.parse(localStorage.getItem("loginData")) || "Login"
-
-if (loginData.length != 0) {
-  login.innerHTML = loginData[0].name;
-} else {
-  login.innerText = "Login";
+  if (loginData.length != 0) {
+    login.innerHTML = loginData[0].name;
+  } else {
+    login.innerText = "Login";
+  }
 }
 
 
@@ -76,3 +78,23 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+logout = document.getElementById("logout")
+logout.addEventListener("click", function ()
+{
+  localStorage.removeItem("loginData")
+  showName()
+})
+
+cartButton = document.getElementById("cart_div")
+cartButton.addEventListener("click", function () {
+  let loginData = JSON.parse(localStorage.getItem("loginData")) || [];
+  if (loginData.length != 0)
+  {
+    window.location.href = "/Pages/cart.html"
+  }
+  else {
+    alert("You need to login first")
+    window.location.href = "/Pages/login.html"
+  }
+})

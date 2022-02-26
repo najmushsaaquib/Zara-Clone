@@ -14,8 +14,15 @@
     <link rel="stylesheet" href="/Styles/nav.css" />
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <link rel="shortcut icon" href="/Logos/zara-logo.png" type="image/x-icon" />
-
-    <title>Nav Bar</title>
+<style>
+  #logout{
+    font-family: "Neue-Helvetica", Arial, Sans-serif;
+  font-size: 12px;
+  margin-top: 4px;
+  cursor: pointer;
+  margin-left: 50px;
+  }
+</style>
   </head>
   <body>
     <!-- ! Main Nav Bar starts form here -->
@@ -82,6 +89,7 @@
         <div id="login_div">
           <pre>  <a href="/Pages/login.html" id="login" ></a> </pre>
         </div>
+        <div id="logout">Logout</div>
         <div id="help_div">
           <!-- Trigger/Open The Modal -->
           <!-- The Modal -->
@@ -98,9 +106,7 @@
         </div>
 
         <div id="cart_div">
-          <a href="/Pages/cart.html">
             <img src="/Logos/cart.svg" alt="cart logo" id="cart_logo" />
-          </a>
         </div>
       </div>
     </div>

@@ -23,7 +23,7 @@ function all() {
 
         var nameDiv = document.createElement("div")
         nameDiv.setAttribute("id", "nameDiv")
-        nameDiv.innerText = elem.name
+        nameDiv.innerHTML = elem.name
 
 
         var proDiv1 = document.createElement("div")
@@ -37,29 +37,36 @@ function all() {
         proDiv2.setAttribute("id", "proDiv2")
         proDiv2.innerText = "Rs" + " " + elem.price
 
+        var quant = document.createElement("div")
+        quant.innerHTML = "Quantity : " 
+
         var proDiv3 = document.createElement("div")
         proDiv3.setAttribute("id", "proDiv3")
+
+        var add = document.createElement("div")
+        add.style.cursor = "pointer"
+        add.setAttribute("id", "add")
+        add.innerText = "ADD MORE"
+
         var dele = document.createElement("div")
         dele.setAttribute("id", "dele")
         dele.innerText = "Delete"
 
-
-        var sav = document.createElement("div")
-        sav.setAttribute("id", "sav")
-        sav.innerText = "Save For Later"
 
         total = total + elem.price
 
         document.querySelector("#prize").innerHTML = "Total price" + " ₹ " + total
         localStorage.setItem("totalPrice",JSON.stringify(total))
 
-
+        add.addEventListener("click", function () {
+            addMore(elem)
+        })
         dele.addEventListener("click", function () {
             delet(index)
         })
 
-        proDiv1.append(para3)
-        proDiv3.append(dele, sav)
+        proDiv1.append(para3, quant)
+        proDiv3.append(add, dele)
         div11.append(nameDiv, image)
         div12.append(proDiv1, proDiv2, proDiv3)
         div1.append(div11, div12)
@@ -74,12 +81,25 @@ function all() {
 function delet(index)
 {
    cartData.splice(index,1)
-   localStorage.setItem("CartData",JSON.stringify(cartData))
+   localStorage.setItem("cartData",JSON.stringify(cartData))
+   all();
+}
+function addMore(elem)
+{
+   cartData.push(elem)
+   localStorage.setItem("cartData",JSON.stringify(cartData))
    all();
 }
 
 document.querySelector("#continue").addEventListener("click",continu)
 function continu()
 {
-window.location.href= "/Pages/address&payment.html"
+    var loginData = JSON.parse(localStorage.getItem("loginData")) || []
+    if (loginData.length != 0) {
+        window.location.href = "/Pages/address&payment.html"
+    }
+    else {
+        alert("Login to continue")
+        window.location.href = "/Pages/login.html"
+    }
 }

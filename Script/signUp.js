@@ -35,7 +35,8 @@ function signUpfun(event){
       {
         alert("Incomplete information") 
       }
-      else{
+      else {
+        alert("Signup completed")
         window.location.href="login.html";
       }
 }

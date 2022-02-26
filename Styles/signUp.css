@@ -10,7 +10,7 @@
   #bucket{
     
     margin-left:20px;
-    margin-top: 160px;
+    
     
   }
  
@@ -266,6 +266,7 @@
         padding-left:40px;
         padding-bottom:60px;
         margin-right:10px;
+        margin:1px solid;
     }
     #pd> h3{
         margin-top:60px;

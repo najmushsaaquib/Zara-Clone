@@ -1,20 +1,18 @@
 document.querySelector("#form").addEventListener("submit",loginPage)
 var loginCredentials = JSON.parse(localStorage.getItem("loginData")) || []
-var signupData=JSON.parse(localStorage.getItem("credentials"));
+var signupData=JSON.parse(localStorage.getItem("credentials")) || [];
+var purchase = JSON.parse(localStorage.getItem("purchaseData")) || []
 
-// signupData={
-//     email:"rajayadavce@gmail.com",
-//     pass:12345
+function loginPage(event){
 
+    event.preventDefault();
 
-  function loginPage(event){
-
-     event.preventDefault();
-
-         var email=document.querySelector("#formdiv1>input").value;
-         var password=document.querySelector("#formdiv2>input").value;
-
-    console.log(email,password)
+    if (signupData.length == 0)
+    {
+        alert("Wrong credentials, Please register to ZARA")
+    }
+    var email=document.querySelector("#formdiv1>input").value;
+    var password=document.querySelector("#formdiv2>input").value;
     document.querySelector("#login").style.cursor="not-allowed"
     
 var flag=false;
@@ -41,14 +39,20 @@ var flag=false;
                 pass:document.querySelector("#pass").value,
             }
             loginCredentials.push(obj)
-            localStorage.setItem("loginData",JSON.stringify(loginCredentials))
-            window.location.href="/index.html"
+            localStorage.setItem("loginData", JSON.stringify(loginCredentials))
+            if (purchase.length == 0) {
+                window.location.href = "/index.html"
+            }
+            else
+            {
+                window.location.href = "/Pages/purchase.html"
+            }
         }
         else{
-            alert("wrong details")
+            alert("Credientials did not matched, make sure you have registered")
         }
-  }
+}
     
 document.querySelector("#createaccount").addEventListener("click", function () {
-      window.location.href="/pages/signUp.html"
-  })
+    window.location.href="/pages/signUp.html"
+})

@@ -37,12 +37,15 @@ function visible()
 
 function purchase(elem)
 {
-    if (JSON.parse(localStorage.getItem("loginData")).length != 0) {
+    var loginData = JSON.parse(localStorage.getItem("loginData")) || []
+    if (loginData.length != 0) {
         window.location.href = "/pages/purchase.html"
         localStorage.setItem("purchaseData", JSON.stringify(elem))
     }
     else {
+        alert("Login to continue")
         window.location.href = "/pages/login.html"
+        localStorage.setItem("purchaseData", JSON.stringify(elem))
     }
 }
 
@@ -61,14 +64,16 @@ document.querySelector("#kids").addEventListener("click", function () {
 
 
 // ad pop up script
-// window.addEventListener("load", function(){
-//     setTimeout(
-//         function open(event){
-//             document.querySelector(".popup").style.display = "block";
-//         },
-//         1000 
-//     )
-// });
-// document.querySelector("#close").addEventListener("click", function(){
-//     document.querySelector(".popup").style.display = "none";
-// });
+window.addEventListener("load", function(){
+    setTimeout(
+        function open(event) {
+            document.querySelector(".popup").style.display = "block";
+            document.querySelector(".popup").style.opacity = "1"
+            document.querySelector(".popup").style.boxShadow = "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px";
+        },
+        1000 
+    )
+});
+document.querySelector("#close").addEventListener("click", function(){
+    document.querySelector(".popup").style.display = "none";
+});

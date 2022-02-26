@@ -3,7 +3,6 @@ cartData= JSON.parse(localStorage.getItem("cartData")) || []
 // document.querySelector("cartbtn").addEventListener("click",purchase)
 
 // var purchesData=JSON.parse(localStorage.getItem("purchaseData"))
-console.log(purchesData);
 // function display(){
 
 //   function purchase(){
@@ -101,9 +100,17 @@ console.log(purchesData);
 // }
 // display();
 function takeMeToCart() {
-    cartData.push(purchesData)
-        localStorage.setItem("cartData",JSON.stringify(cartData));
-        window.location.href="/Pages/cart.html"
+    var loginData = JSON.parse(localStorage.getItem("loginData")) || []
+    if (loginData.length != 0) {
+        cartData.push(purchesData)
+        localStorage.setItem("cartData", JSON.stringify(cartData));
+        window.location.href = "/Pages/cart.html"
+    }
+    else {
+        alert("Login to continue")
+        window.location.href = "/Pages/login.html"
+    }
+    
 
 
 }
