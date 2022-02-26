@@ -224,6 +224,7 @@ opacity: 1;
     position: fixed;
     bottom: 23px;
     right: 30px;
+    top:560px;
     height:30px;
     width: 140px;
   }
@@ -347,6 +348,7 @@ opacity: 1;
     position: fixed;
     bottom: 23px;
     right: 20px;
+    top:560px;
     height:20px;
     width: 100px;
   }
