@@ -28,6 +28,11 @@ We have tried our best to make a fully-functional clone of Zara website that pro
 <p>
     <img src="https://digitalmarketing.temple.edu/mohamadnoorchowdhury/wp-content/uploads/sites/379/2021/07/zara.png" >
     <img src="https://info.webusability.co.uk/hs-fs/hubfs/zara%20homepage.png?width=1268&name=zara%20homepage.png" >
+     <img src="https://miro.medium.com/max/3792/1*hYqt9OjKu1yEm3kH6MrBDg.png" >
+    <img src="https://miro.medium.com/max/3786/1*pp4JGkHfbXAhQDbtDRDX4g.png" >
+    <img src="https://miro.medium.com/max/674/1*7ju3NButNzDomvrFY5465A.png" >
+    <img src="https://miro.medium.com/max/968/1*j3Fvf-buCeU_J362MzaTDA.png" >
+    
    </p>
  
  Click the link to view project: 
