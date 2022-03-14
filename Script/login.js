@@ -1,33 +1,30 @@
 document.querySelector("#form").addEventListener("submit",loginPage)
+var loginCredentials = JSON.parse(localStorage.getItem("loginData")) || []
+var signupData=JSON.parse(localStorage.getItem("credentials")) || [];
+var purchase = JSON.parse(localStorage.getItem("purchaseData")) || []
 
-//  var signupData=JSON.parse(localStorage.getItem("credentials"));
+function loginPage(event){
 
-//   console.log(signupdet)
-signupData={
-    email:"rajayadavce@gmail.com",
-    pass:12345
-}
-console.log("raja")
+    event.preventDefault();
 
-  function loginPage(event){
-
-     event.preventDefault();
-
-         var email=document.querySelector("#formdiv1>input").value;
-         var password=document.querySelector("#formdiv2>input").value;
-
-    console.log(email,password)
+    if (signupData.length == 0)
+    {
+        alert("Wrong credentials, Please register to ZARA")
+    }
+    var email=document.querySelector("#formdiv1>input").value;
+    var password=document.querySelector("#formdiv2>input").value;
     document.querySelector("#login").style.cursor="not-allowed"
     
-
 var flag=false;
-        // for(var i=0;i<signupData.length;i++)
+        for(var i=0;i<signupData.length;i++)
         {
             
-            if(signupData.email==email&&signupData.pass==password)
+            if(signupData[i].email==email && signupData[i].pass==password)
             {
-                flag=true;
-                // break;
+                flag = true;
+                var name = signupData[i].input
+                var phone= signupData[i].number
+                break;
             }
             else
             {
@@ -37,18 +34,27 @@ var flag=false;
         if(flag==true)
         {
             alert("login success")
-            obj={
-                email:document.querySelector("#formdiv1>input").value,
-                pass:document.querySelector("#formdiv2>input").value,
-                flag:true
+            obj = {
+                name: name,
+                email:document.querySelector("#email").value,
+                pass: document.querySelector("#pass").value,
+                phone: phone,
             }
-           
-
-            localStorage.setItem("loginData",JSON.stringify(obj))
-            window.location.href="/index.html"
+            loginCredentials.push(obj)
+            localStorage.setItem("loginData", JSON.stringify(loginCredentials))
+            if (purchase.length == 0) {
+                window.location.href = "/index.html"
+            }
+            else
+            {
+                window.location.href = "/Pages/purchase.html"
+            }
         }
         else{
-            alert("Details not found")
-            
+            alert("Credientials did not matched, make sure you have registered")
         }
-    }
+}
+    
+document.querySelector("#createaccount").addEventListener("click", function () {
+    window.location.href="/pages/signUp.html"
+})

@@ -1,0 +1,120 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Poppins;
+  }
+  
+  body {
+    background: rgb(94,101,102);
+    background: linear-gradient(90deg, rgba(94,101,102,1) 0%, rgba(129,120,120,1) 31%, rgba(54,67,70,1) 100%);
+    
+  }
+  
+  #container {
+    width: 400px;
+    height: 350px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    margin-top: 150px;
+    text-align: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+  }
+  #remain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 30px;
+    margin: auto;
+    margin-top: 20px;
+    color: red;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(134, 4, 4, 0.3) 0px 18px 36px -18px inset;
+    border-radius: 5px;
+  }
+  #phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 30px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  h4 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: red;
+  }
+  input {
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    width: 75%;
+    height: 45px;
+    background-color: rgb(233, 233, 233);
+    border: 1px solid transparent;
+    border-radius: 3px;
+    padding-left: 10px;
+  }
+  
+  #checkbox {
+    max-width: 13px;
+    margin: 0%;
+  }
+  
+  #submit {
+    background-color: rgb(94,101,102);
+    text-align: center;
+    padding: 0px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #remember {
+    width: 75%;
+    height: 45px;
+    margin: auto;
+    display: flex;
+    border-radius: 3px;
+  }
+  
+  span {
+    margin: 13px 0px 0px 7px;
+    font-size: 13px;
+    color: gray;
+  }
+  
+.code{
+    display: inline;
+      width: 40px;
+      height: 40px;
+      background-color: rgb(248, 248, 248);
+      margin: 4px 6px; 
+      border: 1px solid rgb(224, 224, 224);
+    
+}
+
+@media (max-width: 391px) {
+    #outer-container {
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* background-color: yellow; */
+      margin:  auto;
+      padding: 10px;
+    }
+
+   
+}

@@ -10,22 +10,29 @@ function openForm() {
 
   
 
-
-
-
+var totalDiv =document.querySelector("#total>p")
+var arr = JSON.parse(localStorage.getItem("totalPrice"))
+totalDiv.innerText = "TOTAL BILL : ₹"+arr
 // document.querySelector("#form").addEventListener("submit",signUpfun)
 // var credArr = JSON.parse(localStorage.getItem("credentials")) || [];
 function continueForm(){
 //    var optn1 = document.querySelector("#1sto").value;
 //    var optn2 = document.querySelector("#2ndo").value;
-var chose = document.querySelector("#chose").value;
+var chose = document.querySelector("#textAddress").value;
 // if(value=="one"){
-    if(chose===""){
-        alert("Delivery details not filled")
-    }
-    else{
+    var loginData = JSON.parse(localStorage.getItem("loginData")) || []
+    if (loginData.length != 0) {
+        if (chose == "") {
+            alert("Delivery details not filled")
+        }
+        else {
         
-        window.location.href="payment.html";
+            window.location.href = "/Pages/payment.html";
+        }
+    }
+    else {
+        alert("We Think you have logged out, please login to continue")
+        window.location.href = "/Pages/login.html"
     }
 
     
@@ -33,7 +40,7 @@ var chose = document.querySelector("#chose").value;
  
     };
     
-      
+        localStorage.removeItem("purchaseData")
 
 
 

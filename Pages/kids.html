@@ -1,17 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Styles/kids.css">
-    <title>Kids Page</title>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="shortcut icon" href="/Logos/zara-logo.png" type="image/x-icon" />
+    <title>kids Page</title>
 </head>
-<body>
-    
-    
-</body>
 
-<script src="/Script/kids.js" ></script>
+<body>
+    <div id="navBar"></div>
+    <!-- type of items--- like: top/ perfume etc. -->
+    <div id="type">
+        <p id="viewAll">VIEW ALL</p>
+        <p id="boy">BOYS</p>
+        <p id="girl">GIRLS</p>
+    </div>
+
+    <!-- filter -->
+    <div id="filterContainer" class="filter-container">
+        <a href="javascript:void(0)" class="closeBtn" onclick="closewindow()">&times;</a>
+        <div class="innercontainer">
+            <h5>Size</h5>
+            <div class="button">
+                <button id="large">L</button><br>
+                <button id="medium">M</button><br>
+                <button id="small">S</button><br>
+            </div>
+        </div>
+        <div class="innercontainer">
+            <h5>Price</h5>
+            <div class="button">
+                <button id="lowPrice"><₹999</button><br>
+                <button id="mediumPrice">₹1000 - ₹2499</button><br>
+                <button id="highPrice">₹2500 - ₹3999</button><br>
+                <button id="veryHighPrice">>₹4000</button><br>
+            </div>
+        </div>
+
+    </div>
+    <div id="filter">
+        <form id="range">
+            <input id="slider" type="range" min="1" max="5000" value="1" onchange="sliderFunction()">
+        </form>
+        <span id="filterWindow" onclick="openWindow()">Filters</span>
+    </div>
+    <!-- first image -->
+    <div id="firstImage"><img
+            src="https://static.zara.net/photos///2022/V/0/3/p/3037/627/251/102/w/1854/3037627251_15_1_1.jpg?ts=1642768953834"
+            alt="1st image"></div>
+    <div id="text">
+        <h4>PRODUCTS FOR KIDS</h4>
+        <p>OUR COLLECTION OF KIDS DRESSES ENCOMPASSES ALL OF THE SEASON'S BIGGEST TRENDS, FROM TRADITION-STEEPED
+            HERITAGE CHECKS</p>
+    </div>
+    <div id="container"></div>
+</body>
+<script>
+    $(function () {
+        $("#navBar").load("/Pages/nav.html")
+    })
+</script>
+<script>
+    function openWindow() {
+        document.getElementById("filterContainer").style.width = "300px";
+    }
+    function closewindow() {
+        document.getElementById("filterContainer").style.width = "0";
+    }
+</script>
+<script src="/Data/kidsData.js"></script>
+<script src="/Script/kids.js"></script>
 
 </html>

@@ -1,8 +1,4 @@
-* {
-  margin: 0%;
-  padding: 0%;
-  box-sizing: border-box;
-}
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500&display=swap");
 
 @font-face {
   font-family: "Neue-Helvetica";
@@ -25,186 +21,107 @@
   src: url(/Fonts/Low/Light.ttf) format("truetype");
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* ! Vertically Slider Styles  */
+
+html,
 body {
-  font-family: "Neue-Helvetica", Arial, Sans-serif;
-
-  font-family: Arial, Sans-serif;
-  /* font-family: "Low"; */
-}
-
-/* !  Main navbar styling starts from here*/
-
-#navbar {
-  width: 100%;
-  height: 105px;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  position: sticky;
-  z-index: 100;
-  top: 0;
-}
-
-/* #navbar:hover{
-  background-color: white;
-} */
-
-#navbar__left {
-  display: flex;
-  width: 26%;
-}
-
-#logodiv {
-  display: flex;
-  width: 90%;
-}
-
-#logodiv > img {
-  margin-left: 80px;
-  margin-top: 2px;
-  cursor: pointer;
-}
-
-#navbar__right {
-  width: 24%;
-  display: grid;
-  grid-template-columns: 50% 30% 20%;
-  gap: 18px 0px 0px 0px;
-  text-transform: uppercase;
-}
-
-#navbar__right pre {
-  font-family: "Neue-Helvetica", Arial, Sans-serif;
-  font-size: 12px;
-}
-
-a,
-a:hover,
-a:focus,
-a:active,
-a:visited {
-  text-decoration: none;
-  color: black;
-}
-
-#hamdiv {
-  width: 10%;
-}
-
-#cart_logo {
-  max-width: 80px;
-  cursor: pointer;
-}
-
-/* ! Hamburger Menu Side Bar  */
-
-.sidenav {
+  position: relative;
   height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: transparent; /* rgba(255, 37, 37, 0.01); */
-  overflow-x: hidden;
-  padding-top: 130px;
+  overflow-y: hidden;
 }
 
-@keyframes fadeInAnimation {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-.sidenav a {
-  padding: 4px 8px 4px 32px;
-  text-decoration: none;
-  font-size: 15px;
-  color: #000000;
-  display: block;
-  transition: 0.3s;
-  text-transform: uppercase;
+body {
+  font-family: "Neue-Helvetica", Helvetica, Arial, Sans-serif;
+  font-family: Arial, Sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.sidenav a:hover {
-  color: #1b1b1b;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  left: -13px;
-  font-size: 34px;
-}
-
-.sideNavHeading {
-  font-size: 18px;
-}
-
-.sidenav li {
-  margin: 0%;
-  font-size: 10px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-  .sidenav a {
-    font-size: 18px;
-  }
-}
-/* ! Navbar styles Ends Here*/
-
-#first {
+.swiper-container {
   width: 100%;
-  /* height: 80vh; */
-  /* background-color: red; */
-  margin: auto;
-  margin-bottom: 450px;
-}
-.womenimg,
-.menimg {
-  cursor: pointer;
+  height: 100%;
+  margin-top: 20px;
 }
 
-#second {
-  width: 100%;
-  margin-top: 10px;
+.swiper-slide {
   text-align: center;
-  margin-bottom: 450px;
+  font-size: 18px;
+  display: flex;
+
+  /* Center slide text vertically */
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
 
-#second li {
-  font-size: 14px;
-  padding: 0px 5px;
+.section_container {
+  width: 1170px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
 }
 
-#third {
-  width: 100%;
-  height: 500px;
-  overflow: hidden;
-  margin: auto;
-  margin-bottom: 450px;
-}
-
-#fourth {
-  width: 100%;
-  height: 500px;
-  overflow: hidden;
-  margin: auto;
-  margin-bottom: 450px;
+.swiper-container-horizontal
+  > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite,
+.swiper-container-vertical > .swiper-pagination-progressbar {
+  position: absolute;
+  left: 95%;
+  top: 25%;
+  height: 50%;
+  justify-content: center;
 }
 
 video {
   width: 100%;
-  height: 450px;
+  height: 68vh;
 }
 
+.img-text {
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  text-align: center;
+  justify-content: center;
+}
+
+/* ! Horizontal slider Styles */
+
+.container {
+  width: 100%;
+  height: 78vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 55px;
+}
+
+.swiper {
+  width: 80%;
+  height: fit-content;
+}
+
+/* ------------Footer Styles starts from here ------------------ */
+
 footer {
+  margin-top: 100px;
   text-align: center;
 }
 
@@ -218,50 +135,134 @@ footer > h4 {
 /* social media links on the footer */
 
 #social-media {
-  display: flex;
+  display: relative;
   justify-content: center;
 }
 
-li {
+ #social-media li {
   display: inline-block;
   font-weight: 300;
-  font-size: 10px;
+  font-size: 8px;
   margin-right: 20px;
   margin-bottom: 120px;
   text-transform: uppercase;
 }
 
 #bottom-foot {
-  padding-left: 130px;
+  padding-left: 50px;
   text-align: start;
   font-weight: 300;
   font-size: 9px;
-  margin-bottom: 60px;
+  margin-bottom: -110px;
   text-transform: uppercase;
 }
 
 #bottom-text ul {
-  font-size: 10px;
+  font-size: 8px;
 }
 
-/* ! Sliding Divs Styles starts here  */
+/* Footer Styles ends here */
 
-.container {
-  width: 100%;
-  height: 76vh;
-  /* background-color: antiquewhite; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.static {
+  display: none;
+  visibility: hidden;
 }
 
-.swiper .swiper-button-prev,
-.swiper .swiper-button-next {
-  color: black;
+/* ! Media Queries Starts From Here---------- */
+
+@media (max-width: 415px) {
+  
+  .swiper-slide > video {
+    width: 100%;
+    margin: auto;
+  }
+
+  .sections {
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+  }
+
+  .swiper-slide {
+    width: 100%;
+  }
+
+  .swiper-warpper {
+    width: 90%;
+  }
+
+  .section_container {
+    width: 90%;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+  }
+
+  .image > img {
+    width: 100%;
+    justify-content: center;
+    height: 450px;
+    object-fit: cover;
+  }
+
+  .swiper-warpper .swiper-slide {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .swiper-slide .image > img {
+    margin: auto;
+    margin-right: 20px;
+    max-height: 380px;
+  }
+
+  #bottom-foot {
+    padding-left: 5px;
+    font-weight: 300;
+    font-size: 10px;
+    margin: auto;
+    /* margin-bottom: -180px; */
+    text-transform: uppercase;
+  }
+
+  /* #logodiv {
+    margin-left: -55px;
+  } */
+
+  #help_div,
+  #cart_div {
+    display: none;
+  }
+
+  #login {
+    margin-top: 5px;
+    margin-left: 25px;
+    font-size: 12px;
+  }
+
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+
+  .horizontal-img2 {
+    background-color: yellow;
+    text-align: center;
+    display: none;
+  }
+
+  .menimg {
+    margin: auto;
+  }
+
+  .swiper {
+    height: fit-content;
+    display: flex;
+    overflow: hidden;
+    text-align: center;
+  }
 }
-
-/* ! Sliding Divs Styles ends here  */
-
-
-/* This is a test comment */

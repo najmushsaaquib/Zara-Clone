@@ -1,43 +1,30 @@
-/*--------------------------Start The Ham Burger Menu Functionality --------------------*/
-
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.querySelector(".ham").style.display = "none";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.querySelector(".ham").style.display = "inline";
-}
-
-/*--------------------------Start Of The Slider Functionality --------------------*/
-
-const swiper = new Swiper(".swiper", {
+var swiper = new Swiper(".swiper-container", {
   autoplay: {
     delay: 3000,
     disableOnInteraction: false,
-  },
-  speed: 1000,
-  loop: true,
 
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
   },
+
+  speed: 790,
+  direction: "vertical",
+  sliderPerView: 1,
+  spaceBetween: 0,
+  mousewheel: true,
+ 
 });
 
-document.querySelector("#logoimg").addEventListener("click", takeMeHome);
-document.querySelector(".womenimg").addEventListener("click", takeMeToWomen);
-document.querySelector(".menimg").addEventListener("click", takeMeToMen);
+/*--------------------------Swiper Horizontal Functionality--------------------*/
 
-function takeMeHome() {
-  window.location.href = "/index.html";
-}
 
-function takeMeToWomen() {
-  window.location.href = "/Pages/women.html";
-}
+if (window.innerWidth > 415){
 
-function takeMeToMen() {
-  window.location.href = "/Pages/men.html";
+  const swipe = new Swiper(".swiper", {
+    autoplay: {
+      delay: 2700,
+      disableOnInteraction: false,
+      
+    },
+    speed: 1000,
+  });
 }
+ 

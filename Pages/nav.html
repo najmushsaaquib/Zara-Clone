@@ -10,9 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto+Condensed:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="/Logos/zara-new.png" type="image/x-icon" />
+
     <link rel="stylesheet" href="/Styles/nav.css" />
-    <title>Nav Bar</title>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="shortcut icon" href="/Logos/zara-logo.png" type="image/x-icon" />
   </head>
   <body>
     <!-- ! Main Nav Bar starts form here -->
@@ -24,10 +25,11 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
               >&times;</a
             >
-            <a href="/Pages/viewAll.html" class="sideNavHeading">View All</a>
+            <img src="/Logos/zara-logo.png" alt="" class="sidenav-logo" />
+            <a href="/Pages/viewAll.html" class="sideNavHeading">HOME</a>
             <a href="/Pages/women.html" class="sideNavHeading">Women</a>
 
-            <a href="">
+            <a href="/Pages/women.html">
               <ul>
                 <li>Top</li>
                 <li>Jeans</li>
@@ -39,7 +41,7 @@
 
             <a href="/Pages/men.html" class="sideNavHeading">Man</a>
 
-            <a href="">
+            <a href="/Pages/men.html">
               <ul>
                 <li>Shirt</li>
                 <li>Blazer</li>
@@ -51,7 +53,7 @@
 
             <a href="/Pages/kids.html" class="sideNavHeading">Kids</a>
 
-            <a href="">
+            <a href="/Pages/kids.html">
               <ul>
                 <li>Top</li>
                 <li>Jeans</li>
@@ -77,45 +79,61 @@
 
       <div id="navbar__right">
         <div id="login_div">
-          <pre>  <a href="/index.html" id="login" ></a> </pre>
+          <pre>  <a href="/Pages/login.html" id="login" ></a> </pre>
         </div>
+        <div id="logout">Logout</div>
         <div id="help_div">
-          <pre>Help</pre>
+          <!-- Trigger/Open The Modal -->
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <pre>Reach us on : helpdesk@zara.com</pre>
+              <pre>Or Give a call on +1 11-4444-2620</pre>
+            </div>
+          </div>
+
+          <pre id="myBtn">Help</pre>
         </div>
+
         <div id="cart_div">
-          <a href="/Pages/cart.html">
-            <img src="/Logos/cart.svg" alt="cart logo" id="cart_logo" />
-          </a>
+          <img src="/Logos/cart.svg" alt="cart logo" id="cart_logo" />
         </div>
       </div>
     </div>
     <!--  ! End of the nav bar -->
 
-
     <!-- !  Chat Functionality Starts fomr here -->
 
-    <button class="open-button" onclick="openForm()">Chat</button>
- 
+    <button class="open-button" onclick="openForm()">
+      <img
+        src="https://img.icons8.com/material-sharp/20/000000/topic--v1.png"
+        id="chaticon"
+      />
+
+      <p>Chat</p>
+    </button>
+
     <div class="chat-popup" id="myForm">
       <form action="/action_page.php" class="form-container">
-       
         <h1>Chat</h1>
-        
-    
+
         <label for="msg"><b>Message</b></label>
-        <textarea placeholder="Zara here, how can I help you...?" name="msg" required></textarea>
-    
+        <textarea
+          placeholder="Hi, I'm Zara's virtual assistant. How can I help you?"
+          name="msg"
+          required
+        ></textarea>
+
         <button type="submit" class="btn">Send</button>
-        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">
+          Close
+        </button>
       </form>
     </div>
-      
 
     <!-- !  Chat Functionality ends here -->
-
-
-
   </body>
   <script src="/Script/nav.js"></script>
-  
 </html>

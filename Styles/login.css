@@ -179,7 +179,7 @@ ul {
                 border: none;
                 border-bottom: 2px solid rgb(22, 20, 20);
               }
-              #password:focus{
+              #pass:focus{
                     outline: none;
               }
               #email:focus{

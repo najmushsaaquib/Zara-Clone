@@ -4,42 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="/Logos/zara-logo.png" type="image/x-icon" />
+    <title>Payment page</title>
 
     <link rel="stylesheet" href="/Styles/payment.css" />
     
 </head>
 <body>
-    <nav>
-        <div id="navbar__main">
-          <!-- left part of the nav -->
-          <div id="navbar__left">
-            <img src="/Logos/menu.png" alt="hamburger menu" id="hamburger" />
-            <img
-              src="/Logos/zara-title.png"
-              alt="zara logo is here"
-              id="main-logo"
-            />
-          </div>
+
   
-          <!-- right part of the nav -->
-          <div id="navbar__right">
-            <div id="search-box" class="nav-right-pad">
-              <span>SEARCH</span>
-            </div>
-            <div id="login" class="nav-right-pad">LOGIN</div>
-            <div id="help" class="nav-right-pad">HELP</div>
-            <div id="cart" class="nav-right-pad">CART</div>
-          </div>
-        </div>
-      </nav>
+  
+  <div id="navBar"></div>
+  
+ 
+  
+
+
+   
     <div id="container">
     <div id="card"><img src="https://static.zara.net/static/images/payment/payment/icon-payment-mastercard.svg" alt=""></div>
     <div id="box">
         <div><input class="infrm" id="card2" type="number" placeholder="CARD NUMBER"></div>
         <div><input class="infrm" id="date" type="date" placeholder="EXPIRY DATE"></div>
-      </div>
-   <div id="box">
+    
         <div><input class="infrm" id="cholder" type="text" placeholder="CARD HOLDER"></div>
         <div><input class="infrm" id="cvv" type="number" placeholder="CVV2 SECURITY CODE"></div>
     </div>
@@ -50,7 +37,7 @@
         <div><p>ENGLISH</p>
        <p>© ALL RIGHTS RESERVED</p></div>
       </div>
- 
+     
  
       <div id="ldiv"><p>NAME AND ADDRESS OF THE MANUFACTURER:
        INDUSTRIA DE DISEÑO TEXTIL, S.A. (INDITEX, S.A.)
@@ -101,3 +88,13 @@
 </body>
 </html>
 <script src="/Script/payment.js"></script>
+
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+  $(function () {
+      $("#navBar").load("/Pages/nav.html")
+  })
+</script>
+
+
+<!-- completed -->

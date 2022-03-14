@@ -1,18 +1,8 @@
-purchesData={
-    name:"COTTON SHIRT",
-    image:"https://static.zara.net/photos///2022/V/0/2/p/8281/469/916/2/w/750/8281469916_1_1_1.jpg?ts=1644942934779",
-    select:"S",
-    price:3000,
-
-    material:"We work with monitoring programmes to ensure compliance with safety, health and quality standards for our products."
-}
-
+purchesData= JSON.parse(localStorage.getItem("purchaseData"))
+cartData= JSON.parse(localStorage.getItem("cartData")) || []
 // document.querySelector("cartbtn").addEventListener("click",purchase)
 
 // var purchesData=JSON.parse(localStorage.getItem("purchaseData"))
-
-// var cartData=JSON.parse(localStorage.getItem("purchaseData"))||[];
-
 // function display(){
 
 //   function purchase(){
@@ -27,7 +17,7 @@ purchesData={
 
       var mid= document.querySelector("#mid")
       var image=document.createElement("img")
-      image.setAttribute("src",purchesData.image)
+      image.setAttribute("src",purchesData.img)
 
       mid.append(image)
 
@@ -102,17 +92,39 @@ purchesData={
 
 
 
-        cartData.push(purchesData)
-
-        localStorage.setItem("cartData",JSON.stringify(cartData));
+     
 
         // window.location.href="/Pages/cart.html"
 
     // }
 // }
 // display();
-function takeMeToCart(){
-        window.location.href="/Pages/cart.html"
+function takeMeToCart() {
+    flag= false
+    var loginData = JSON.parse(localStorage.getItem("loginData")) || []
+    if (loginData.length != 0) {
+            for (var i = 0; i < cartData.length; i++)
+            {
+                if (purchesData.class == cartData[i].class)
+                {
+                    cartData[i].count++
+                    localStorage.setItem("cartData", JSON.stringify(cartData));
+                    window.location.href = "/Pages/cart.html"
+                    flag= true
+                }
+            }
+        if (flag == false)
+        {
+            cartData.push(purchesData)
+            localStorage.setItem("cartData", JSON.stringify(cartData));
+            window.location.href = "/Pages/cart.html"
+            }
+    }
+    else {
+        alert("Login to continue")
+        window.location.href = "/Pages/login.html"
+    }
+    
 
 
 }
