@@ -124,11 +124,11 @@ function continu()
             window.location.href = "/Pages/address&payment.html"
         }
         else {
-            alert("Please add items to cart to continue...")
+            alert("Please add items to cart to continue....")
         }
     }
     else {
         alert("Login to continue")
-        window.location.href = "/Pages/login.html"
+        window.location.href = "/Pages/login.html "
     }
 }
