@@ -9,9 +9,7 @@ We have tried our best to make a fully-functional clone of Zara website that pro
 #### Tech Stack-
 
 <p float="left">
-    <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_640.png" width="100" height="100">
-    <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_640.png" width="100" height="100">
-   <img src="https://raw.githubusercontent.com/krishaayjois21/krishaayjois21/master/assets/javascript.png" width="100" height="100">
+    <p align="left"> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> </p>
  </p>
 
 ## Functionalities associated with this website
