@@ -1,6 +1,6 @@
 # Zara Clone
 
-<a href="https://tryme-zara-initial.netlify.app/">![Logo](https://cdn.iconscout.com/icon/free/png-256/zara-3215529-2673947.png)</a>
+<a href="https://zara-final.netlify.app/">![Logo](https://cdn.iconscout.com/icon/free/png-256/zara-3215529-2673947.png)</a>
 
 We have tried our best to make a fully-functional clone of Zara website that provides a minimal user experience where users can roam around and purchase their desired looks.
 
